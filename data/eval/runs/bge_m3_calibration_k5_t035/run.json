@@ -1,0 +1,2928 @@
+{
+  "manifest": {
+    "run_id": "26d0a4085333",
+    "created_at": "2026-08-31T20:12:36.127146+00:00",
+    "model": "bge-m3",
+    "collection": "tutor_eval_bge_m3_v1",
+    "k": 5,
+    "score_threshold": 0.35,
+    "seed": 0,
+    "config": {},
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+      "python": "3.12.10",
+      "cpu_count": 16
+    },
+    "case_count": 24,
+    "metrics": {
+      "query_count": 24,
+      "evaluated_retrieval_queries": 24,
+      "evaluated_recall_queries": 24,
+      "hit_at_k": 0.875,
+      "precision_at_k": 0.225,
+      "recall_at_k": 0.7916666666666666,
+      "mrr_at_k": 0.7305555555555556,
+      "ndcg_at_k": 0.7166661423783226,
+      "source_leakage_rate": 0.03333333333333333,
+      "abstention_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "latency_p50_ms": 1288.9158999314532,
+      "latency_p95_ms": 1609.9017299362463
+    },
+    "query_metrics": [
+      {
+        "query_id": "live-cal-001",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1656.5372999757528
+      },
+      {
+        "query_id": "live-cal-002",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1303.7267997860909
+      },
+      {
+        "query_id": "live-cal-003",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1333.4908001124859
+      },
+      {
+        "query_id": "live-cal-004",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1350.3781999461353
+      },
+      {
+        "query_id": "live-cal-005",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1305.394700029865
+      },
+      {
+        "query_id": "live-cal-006",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1245.9056000225246
+      },
+      {
+        "query_id": "live-cal-007",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1345.3694998752326
+      },
+      {
+        "query_id": "live-cal-008",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1323.153299978003
+      },
+      {
+        "query_id": "live-cal-009",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.7601875334318685,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1176.1178001761436
+      },
+      {
+        "query_id": "live-cal-010",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1250.0190001446754
+      },
+      {
+        "query_id": "live-cal-011",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1121.7731998767704
+      },
+      {
+        "query_id": "live-cal-012",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1227.5672000832856
+      },
+      {
+        "query_id": "live-cal-013",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1096.3926000986248
+      },
+      {
+        "query_id": "live-cal-014",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1015.3194998856634
+      },
+      {
+        "query_id": "live-cal-015",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 967.5429000053555
+      },
+      {
+        "query_id": "live-cal-016",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.6,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 957.6183999888599
+      },
+      {
+        "query_id": "live-cal-017",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": null,
+        "latency_ms": 1305.1165000069886
+      },
+      {
+        "query_id": "live-cal-018",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "source_leakage": 0.2,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1110.1643000729382
+      },
+      {
+        "query_id": "live-cal-019",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1382.7376998960972
+      },
+      {
+        "query_id": "live-cal-020",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1274.1050000768155
+      },
+      {
+        "query_id": "live-cal-021",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 0.5,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.3065735963827292,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1215.6100999563932
+      },
+      {
+        "query_id": "live-cal-022",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 0.5,
+        "mrr": 0.2,
+        "ndcg": 0.23719771276929622,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1359.187699854374
+      },
+      {
+        "query_id": "live-cal-023",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": true,
+        "latency_ms": 1344.0881001297385
+      },
+      {
+        "query_id": "live-cal-024",
+        "k": 5,
+        "hit": 1.0,
+        "precision": 0.2,
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.6131471927654584,
+        "source_leakage": 0.0,
+        "abstained": false,
+        "abstention_correct": null,
+        "latency_ms": 1649.9894999433309
+      }
+    ]
+  },
+  "queries": [
+    {
+      "case_id": "live-cal-001",
+      "query": "¿Qué es el álgebra y para qué sirve?",
+      "latency_ms": 1656.5372999757528,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:455624310ec30b9c",
+          "score": 0.71395993,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "bead76ab926ae0d7d9c33629d57e98579a572e864d8185545b9bce278b528a34",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:05918ce4fb692e59",
+          "score": 0.6880522,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "b21a312270ac24f0f4f6392b04a9aae7b9c169db8b1de86e7dc970a21c4e539c",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e521976fb2a49137",
+          "score": 0.6752757,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "9049d2ae43d7ab3145d9822c827b2490241cab809c931934321842f5cecfd880",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:fda0c90f80327221",
+          "score": 0.6306195,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "1678e8a9b2b6dba408269c9e7c78ca902e61f7f838ea887a957f9c8921798bcd",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 81.95100000000001,
+            "timestamp_start": 6.74,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:2f018ba1cf1a2d80",
+          "score": 0.5415709,
+          "metadata": {
+            "chunk_index": 3,
+            "content_hash": "3594e79c655f5cb18d34e371c7bb3d1468c5740626db352a2059843c71ab4eb0",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-002",
+      "query": "¿Cómo se representan las relaciones en álgebra?",
+      "latency_ms": 1303.7267997860909,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:e521976fb2a49137",
+          "score": 0.66320133,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "9049d2ae43d7ab3145d9822c827b2490241cab809c931934321842f5cecfd880",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:455624310ec30b9c",
+          "score": 0.6430134,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "bead76ab926ae0d7d9c33629d57e98579a572e864d8185545b9bce278b528a34",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:26dcb0bade9615ca",
+          "score": 0.62956595,
+          "metadata": {
+            "chunk_index": 4,
+            "content_hash": "d0488b2b94628ebf4c2afdfe4ad1f427f1024fb15aa9235092d23b74974dd701",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:05918ce4fb692e59",
+          "score": 0.5814741,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "b21a312270ac24f0f4f6392b04a9aae7b9c169db8b1de86e7dc970a21c4e539c",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:44774aaa82cabe7e",
+          "score": 0.57974315,
+          "metadata": {
+            "chunk_index": 5,
+            "content_hash": "b0b46ea152553f6ef8b051e07988e06fd85d3b9143be56926816d8218a3c4109",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-003",
+      "query": "¿Cuál es la diferencia entre variable e incógnita?",
+      "latency_ms": 1333.4908001124859,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:2f018ba1cf1a2d80",
+          "score": 0.59633,
+          "metadata": {
+            "chunk_index": 3,
+            "content_hash": "3594e79c655f5cb18d34e371c7bb3d1468c5740626db352a2059843c71ab4eb0",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:fcc37b42ed3f88a6",
+          "score": 0.5445589,
+          "metadata": {
+            "chunk_index": 7,
+            "content_hash": "e42c9bbda2cde01275f5210f34cf9e038c1a120f1018d6af847e5fa1b57e08f3",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff7e51a9cdf7ad67",
+          "score": 0.4982859,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "fe3f4930af01cf1df7260cdcf0a15f286f0eabeb0068440cb75243ffdfe3e8e6",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 156.842,
+            "timestamp_start": 81.951,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:46386255428f1bd4",
+          "score": 0.4838209,
+          "metadata": {
+            "chunk_index": 6,
+            "content_hash": "04c22da79ad1198bb3b6e666707b91060bc4ad530ca2e5e7720ca9e72fce54a7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:29416e008b4dd8ce",
+          "score": 0.46602502,
+          "metadata": {
+            "chunk_index": 10,
+            "content_hash": "dc02c21561a47d18b0920e49298fd4521932cf3120e275b5bb65a3b3d11c94fe",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-004",
+      "query": "¿Qué métodos se usan para resolver sistemas lineales?",
+      "latency_ms": 1350.3781999461353,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.66726184,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:46386255428f1bd4",
+          "score": 0.6527355,
+          "metadata": {
+            "chunk_index": 6,
+            "content_hash": "04c22da79ad1198bb3b6e666707b91060bc4ad530ca2e5e7720ca9e72fce54a7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:17d8c4d51ec3dc3c",
+          "score": 0.5480223,
+          "metadata": {
+            "chunk_index": 9,
+            "content_hash": "f4de5f49dfdfef9ab91b5419234415eb087981a583b2912eb2c9859a5463b482",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:10c6f3fe4923b595",
+          "score": 0.5460546,
+          "metadata": {
+            "chunk_index": 14,
+            "content_hash": "dab10d1432ca87925899a15c2283a233cabe2a4eb9c91238ff5cf37aa002aebf",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:26dcb0bade9615ca",
+          "score": 0.5360371,
+          "metadata": {
+            "chunk_index": 4,
+            "content_hash": "d0488b2b94628ebf4c2afdfe4ad1f427f1024fb15aa9235092d23b74974dd701",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-005",
+      "query": "¿Cómo se resuelve el sistema de bicicletas y triciclos?",
+      "latency_ms": 1305.394700029865,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:08728bf2740102d6",
+          "score": 0.6669823,
+          "metadata": {
+            "chunk_index": 8,
+            "content_hash": "d8fbee13192017285371d91b4755f1c3d8729be6536bec2fcb3625ceb7455fb7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:fd35b5b54b4d2c8f",
+          "score": 0.6625185,
+          "metadata": {
+            "chunk_index": 15,
+            "content_hash": "5dc7eb63f26fae66adc775fed2e4086f9dd302a9b6ea6b9f4f9deb8a41ce6d75",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:29416e008b4dd8ce",
+          "score": 0.653629,
+          "metadata": {
+            "chunk_index": 10,
+            "content_hash": "dc02c21561a47d18b0920e49298fd4521932cf3120e275b5bb65a3b3d11c94fe",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:fcc37b42ed3f88a6",
+          "score": 0.6417534,
+          "metadata": {
+            "chunk_index": 7,
+            "content_hash": "e42c9bbda2cde01275f5210f34cf9e038c1a120f1018d6af847e5fa1b57e08f3",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:b3497c38a8ae29e0",
+          "score": 0.63511443,
+          "metadata": {
+            "chunk_index": 13,
+            "content_hash": "2b9cde59def92041182e742b17238c45aed68a2229864ad76ebb056b05b652bb",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-006",
+      "query": "¿Qué punto representa la solución gráfica del sistema?",
+      "latency_ms": 1245.9056000225246,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:10c6f3fe4923b595",
+          "score": 0.64000344,
+          "metadata": {
+            "chunk_index": 14,
+            "content_hash": "dab10d1432ca87925899a15c2283a233cabe2a4eb9c91238ff5cf37aa002aebf",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:fd35b5b54b4d2c8f",
+          "score": 0.55912507,
+          "metadata": {
+            "chunk_index": 15,
+            "content_hash": "5dc7eb63f26fae66adc775fed2e4086f9dd302a9b6ea6b9f4f9deb8a41ce6d75",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:46386255428f1bd4",
+          "score": 0.5383692,
+          "metadata": {
+            "chunk_index": 6,
+            "content_hash": "04c22da79ad1198bb3b6e666707b91060bc4ad530ca2e5e7720ca9e72fce54a7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.49944532,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:b3497c38a8ae29e0",
+          "score": 0.4978127,
+          "metadata": {
+            "chunk_index": 13,
+            "content_hash": "2b9cde59def92041182e742b17238c45aed68a2229864ad76ebb056b05b652bb",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-007",
+      "query": "¿Qué significa que dos ecuaciones tengan solución común?",
+      "latency_ms": 1345.3694998752326,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff7e51a9cdf7ad67",
+          "score": 0.61833036,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "fe3f4930af01cf1df7260cdcf0a15f286f0eabeb0068440cb75243ffdfe3e8e6",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 156.842,
+            "timestamp_start": 81.951,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:7d05ec7a69c8ae94",
+          "score": 0.57783735,
+          "metadata": {
+            "chunk_index": 12,
+            "content_hash": "1c6b5ffdeefb3f6cd70fb3f31e8b568b0446008c941d4c65fbec97de005c6065",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e41a95165a68bf4d",
+          "score": 0.57264686,
+          "metadata": {
+            "chunk_index": 11,
+            "content_hash": "54b67ed0827d0b0b329d41c4f14a6f4792348e6a5e9c8aa6d41301a968e46a96",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:c96e577e2bfda429",
+          "score": 0.5622246,
+          "metadata": {
+            "chunk_index": 21,
+            "content_hash": "eec0ed4b71cf84803ff28fa873bae667c65a9668739106369ea4106ccfe0c8ec",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:b3497c38a8ae29e0",
+          "score": 0.5562459,
+          "metadata": {
+            "chunk_index": 13,
+            "content_hash": "2b9cde59def92041182e742b17238c45aed68a2229864ad76ebb056b05b652bb",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-008",
+      "query": "¿Qué es una ecuación cuadrática?",
+      "latency_ms": 1323.153299978003,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.673166,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:f086db7b871cbe15",
+          "score": 0.6686009,
+          "metadata": {
+            "chunk_index": 17,
+            "content_hash": "393e97d198974faa2cfa2805b8b4106556e6866e2a9523cbbc6d0a3829b0a677",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e2141f401bd7c5d1",
+          "score": 0.61759233,
+          "metadata": {
+            "chunk_index": 22,
+            "content_hash": "5ecc3404336dfc5fab212bfb4b5348447d7f910ce66e13969f1f40d6e64b3908",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:20c2927349a846b5",
+          "score": 0.5898273,
+          "metadata": {
+            "chunk_index": 19,
+            "content_hash": "7bd794b439faf179025578ae1d9bb85f043a42492e6cb7372e2f830cc791ad74",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:c96e577e2bfda429",
+          "score": 0.5473107,
+          "metadata": {
+            "chunk_index": 21,
+            "content_hash": "eec0ed4b71cf84803ff28fa873bae667c65a9668739106369ea4106ccfe0c8ec",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-009",
+      "query": "¿Cuándo conviene usar la fórmula general?",
+      "latency_ms": 1176.1178001761436,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:e2141f401bd7c5d1",
+          "score": 0.6214201,
+          "metadata": {
+            "chunk_index": 22,
+            "content_hash": "5ecc3404336dfc5fab212bfb4b5348447d7f910ce66e13969f1f40d6e64b3908",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:f086db7b871cbe15",
+          "score": 0.55147994,
+          "metadata": {
+            "chunk_index": 17,
+            "content_hash": "393e97d198974faa2cfa2805b8b4106556e6866e2a9523cbbc6d0a3829b0a677",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:c96e577e2bfda429",
+          "score": 0.5082454,
+          "metadata": {
+            "chunk_index": 21,
+            "content_hash": "eec0ed4b71cf84803ff28fa873bae667c65a9668739106369ea4106ccfe0c8ec",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.47847593,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:2f018ba1cf1a2d80",
+          "score": 0.472535,
+          "metadata": {
+            "chunk_index": 3,
+            "content_hash": "3594e79c655f5cb18d34e371c7bb3d1468c5740626db352a2059843c71ab4eb0",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-010",
+      "query": "¿Cómo se factoriza una diferencia de cuadrados?",
+      "latency_ms": 1250.0190001446754,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:51b86ef9b924da55",
+          "score": 0.6592889,
+          "metadata": {
+            "chunk_index": 18,
+            "content_hash": "1ae97493c3c8156931d8e9aa0473e7035bb2a232375f10ee59015c6c0eacef6f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:20c2927349a846b5",
+          "score": 0.6046701,
+          "metadata": {
+            "chunk_index": 19,
+            "content_hash": "7bd794b439faf179025578ae1d9bb85f043a42492e6cb7372e2f830cc791ad74",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:d4a7e096d39ca881",
+          "score": 0.59796584,
+          "metadata": {
+            "chunk_index": 20,
+            "content_hash": "3eef309d193c295154cb56bfdb092b01d361d507deb4bc6f932843546b1beb25",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:f086db7b871cbe15",
+          "score": 0.5818943,
+          "metadata": {
+            "chunk_index": 17,
+            "content_hash": "393e97d198974faa2cfa2805b8b4106556e6866e2a9523cbbc6d0a3829b0a677",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:c96e577e2bfda429",
+          "score": 0.57595444,
+          "metadata": {
+            "chunk_index": 21,
+            "content_hash": "eec0ed4b71cf84803ff28fa873bae667c65a9668739106369ea4106ccfe0c8ec",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-011",
+      "query": "¿Cómo se comprueban las soluciones de un sistema?",
+      "latency_ms": 1121.7731998767704,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:17d8c4d51ec3dc3c",
+          "score": 0.59764904,
+          "metadata": {
+            "chunk_index": 9,
+            "content_hash": "f4de5f49dfdfef9ab91b5419234415eb087981a583b2912eb2c9859a5463b482",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:10c6f3fe4923b595",
+          "score": 0.58828354,
+          "metadata": {
+            "chunk_index": 14,
+            "content_hash": "dab10d1432ca87925899a15c2283a233cabe2a4eb9c91238ff5cf37aa002aebf",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.5680742,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:fcc37b42ed3f88a6",
+          "score": 0.5623146,
+          "metadata": {
+            "chunk_index": 7,
+            "content_hash": "e42c9bbda2cde01275f5210f34cf9e038c1a120f1018d6af847e5fa1b57e08f3",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:b3497c38a8ae29e0",
+          "score": 0.56029105,
+          "metadata": {
+            "chunk_index": 13,
+            "content_hash": "2b9cde59def92041182e742b17238c45aed68a2229864ad76ebb056b05b652bb",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-012",
+      "query": "¿Qué es la variación lineal no proporcional?",
+      "latency_ms": 1227.5672000832856,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:46386255428f1bd4",
+          "score": 0.652364,
+          "metadata": {
+            "chunk_index": 6,
+            "content_hash": "04c22da79ad1198bb3b6e666707b91060bc4ad530ca2e5e7720ca9e72fce54a7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:44774aaa82cabe7e",
+          "score": 0.6174144,
+          "metadata": {
+            "chunk_index": 5,
+            "content_hash": "b0b46ea152553f6ef8b051e07988e06fd85d3b9143be56926816d8218a3c4109",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:26dcb0bade9615ca",
+          "score": 0.50613403,
+          "metadata": {
+            "chunk_index": 4,
+            "content_hash": "d0488b2b94628ebf4c2afdfe4ad1f427f1024fb15aa9235092d23b74974dd701",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.41993415,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:51b86ef9b924da55",
+          "score": 0.35901743,
+          "metadata": {
+            "chunk_index": 18,
+            "content_hash": "1ae97493c3c8156931d8e9aa0473e7035bb2a232375f10ee59015c6c0eacef6f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-013",
+      "query": "¿Qué papel tiene la pendiente en una gráfica lineal?",
+      "latency_ms": 1096.3926000986248,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:46386255428f1bd4",
+          "score": 0.50974923,
+          "metadata": {
+            "chunk_index": 6,
+            "content_hash": "04c22da79ad1198bb3b6e666707b91060bc4ad530ca2e5e7720ca9e72fce54a7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:26dcb0bade9615ca",
+          "score": 0.5069804,
+          "metadata": {
+            "chunk_index": 4,
+            "content_hash": "d0488b2b94628ebf4c2afdfe4ad1f427f1024fb15aa9235092d23b74974dd701",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e521976fb2a49137",
+          "score": 0.4559319,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "9049d2ae43d7ab3145d9822c827b2490241cab809c931934321842f5cecfd880",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:44774aaa82cabe7e",
+          "score": 0.44211382,
+          "metadata": {
+            "chunk_index": 5,
+            "content_hash": "b0b46ea152553f6ef8b051e07988e06fd85d3b9143be56926816d8218a3c4109",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:fd35b5b54b4d2c8f",
+          "score": 0.41966695,
+          "metadata": {
+            "chunk_index": 15,
+            "content_hash": "5dc7eb63f26fae66adc775fed2e4086f9dd302a9b6ea6b9f4f9deb8a41ce6d75",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-014",
+      "query": "¿Qué representa la letra x en una ecuación?",
+      "latency_ms": 1015.3194998856634,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff7e51a9cdf7ad67",
+          "score": 0.6213108,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "fe3f4930af01cf1df7260cdcf0a15f286f0eabeb0068440cb75243ffdfe3e8e6",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 156.842,
+            "timestamp_start": 81.951,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:08728bf2740102d6",
+          "score": 0.56819206,
+          "metadata": {
+            "chunk_index": 8,
+            "content_hash": "d8fbee13192017285371d91b4755f1c3d8729be6536bec2fcb3625ceb7455fb7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:fda0c90f80327221",
+          "score": 0.55476284,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "1678e8a9b2b6dba408269c9e7c78ca902e61f7f838ea887a957f9c8921798bcd",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 81.95100000000001,
+            "timestamp_start": 6.74,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff753cfed00c9f3d",
+          "score": 0.5427594,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "dca9404f8a80d386a30e073477e3cd2ac29164428d85a21663e45a63dd73746f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 180.0,
+            "timestamp_start": 156.842,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:7d05ec7a69c8ae94",
+          "score": 0.53301513,
+          "metadata": {
+            "chunk_index": 12,
+            "content_hash": "1c6b5ffdeefb3f6cd70fb3f31e8b568b0446008c941d4c65fbec97de005c6065",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-015",
+      "query": "¿Qué es una ecuación en el video?",
+      "latency_ms": 967.5429000053555,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff7e51a9cdf7ad67",
+          "score": 0.56718624,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "fe3f4930af01cf1df7260cdcf0a15f286f0eabeb0068440cb75243ffdfe3e8e6",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 156.842,
+            "timestamp_start": 81.951,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff753cfed00c9f3d",
+          "score": 0.5441675,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "dca9404f8a80d386a30e073477e3cd2ac29164428d85a21663e45a63dd73746f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 180.0,
+            "timestamp_start": 156.842,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:08728bf2740102d6",
+          "score": 0.5337658,
+          "metadata": {
+            "chunk_index": 8,
+            "content_hash": "d8fbee13192017285371d91b4755f1c3d8729be6536bec2fcb3625ceb7455fb7",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.5165758,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:29416e008b4dd8ce",
+          "score": 0.5108201,
+          "metadata": {
+            "chunk_index": 10,
+            "content_hash": "dc02c21561a47d18b0920e49298fd4521932cf3120e275b5bb65a3b3d11c94fe",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-016",
+      "query": "¿Cómo se simplifican ecuaciones hasta obtener x=3?",
+      "latency_ms": 957.6183999888599,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff753cfed00c9f3d",
+          "score": 0.6266469,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "dca9404f8a80d386a30e073477e3cd2ac29164428d85a21663e45a63dd73746f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 180.0,
+            "timestamp_start": 156.842,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff7e51a9cdf7ad67",
+          "score": 0.6064566,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "fe3f4930af01cf1df7260cdcf0a15f286f0eabeb0068440cb75243ffdfe3e8e6",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 156.842,
+            "timestamp_start": 81.951,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:b3497c38a8ae29e0",
+          "score": 0.5858257,
+          "metadata": {
+            "chunk_index": 13,
+            "content_hash": "2b9cde59def92041182e742b17238c45aed68a2229864ad76ebb056b05b652bb",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:f086db7b871cbe15",
+          "score": 0.58263254,
+          "metadata": {
+            "chunk_index": 17,
+            "content_hash": "393e97d198974faa2cfa2805b8b4106556e6866e2a9523cbbc6d0a3829b0a677",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:7d05ec7a69c8ae94",
+          "score": 0.56138545,
+          "metadata": {
+            "chunk_index": 12,
+            "content_hash": "1c6b5ffdeefb3f6cd70fb3f31e8b568b0446008c941d4c65fbec97de005c6065",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-017",
+      "query": "¿Qué reglas de símbolos algebraicos se presentan?",
+      "latency_ms": 1305.1165000069886,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:e521976fb2a49137",
+          "score": 0.57760566,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "9049d2ae43d7ab3145d9822c827b2490241cab809c931934321842f5cecfd880",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff753cfed00c9f3d",
+          "score": 0.56008327,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "dca9404f8a80d386a30e073477e3cd2ac29164428d85a21663e45a63dd73746f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 180.0,
+            "timestamp_start": 156.842,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:fda0c90f80327221",
+          "score": 0.5364651,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "1678e8a9b2b6dba408269c9e7c78ca902e61f7f838ea887a957f9c8921798bcd",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 81.95100000000001,
+            "timestamp_start": 6.74,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:455624310ec30b9c",
+          "score": 0.5257426,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "bead76ab926ae0d7d9c33629d57e98579a572e864d8185545b9bce278b528a34",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:26dcb0bade9615ca",
+          "score": 0.48834834,
+          "metadata": {
+            "chunk_index": 4,
+            "content_hash": "d0488b2b94628ebf4c2afdfe4ad1f427f1024fb15aa9235092d23b74974dd701",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-018",
+      "query": "¿Qué materiales se usan en la sesión de álgebra?",
+      "latency_ms": 1110.1643000729382,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:05918ce4fb692e59",
+          "score": 0.65117896,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "b21a312270ac24f0f4f6392b04a9aae7b9c169db8b1de86e7dc970a21c4e539c",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:455624310ec30b9c",
+          "score": 0.5886991,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "bead76ab926ae0d7d9c33629d57e98579a572e864d8185545b9bce278b528a34",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e521976fb2a49137",
+          "score": 0.5541929,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "9049d2ae43d7ab3145d9822c827b2490241cab809c931934321842f5cecfd880",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:fda0c90f80327221",
+          "score": 0.50796944,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "1678e8a9b2b6dba408269c9e7c78ca902e61f7f838ea887a957f9c8921798bcd",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 81.95100000000001,
+            "timestamp_start": 6.74,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:2f018ba1cf1a2d80",
+          "score": 0.46203765,
+          "metadata": {
+            "chunk_index": 3,
+            "content_hash": "3594e79c655f5cb18d34e371c7bb3d1468c5740626db352a2059843c71ab4eb0",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-019",
+      "query": "¿Qué son los productos notables?",
+      "latency_ms": 1382.7376998960972,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:d4a7e096d39ca881",
+          "score": 0.59437215,
+          "metadata": {
+            "chunk_index": 20,
+            "content_hash": "3eef309d193c295154cb56bfdb092b01d361d507deb4bc6f932843546b1beb25",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:51b86ef9b924da55",
+          "score": 0.5624863,
+          "metadata": {
+            "chunk_index": 18,
+            "content_hash": "1ae97493c3c8156931d8e9aa0473e7035bb2a232375f10ee59015c6c0eacef6f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-020",
+      "query": "¿Qué significa resolver simultáneamente un sistema?",
+      "latency_ms": 1274.1050000768155,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:17d8c4d51ec3dc3c",
+          "score": 0.50465333,
+          "metadata": {
+            "chunk_index": 9,
+            "content_hash": "f4de5f49dfdfef9ab91b5419234415eb087981a583b2912eb2c9859a5463b482",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e41a95165a68bf4d",
+          "score": 0.49324045,
+          "metadata": {
+            "chunk_index": 11,
+            "content_hash": "54b67ed0827d0b0b329d41c4f14a6f4792348e6a5e9c8aa6d41301a968e46a96",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:10c6f3fe4923b595",
+          "score": 0.4807593,
+          "metadata": {
+            "chunk_index": 14,
+            "content_hash": "dab10d1432ca87925899a15c2283a233cabe2a4eb9c91238ff5cf37aa002aebf",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff7e51a9cdf7ad67",
+          "score": 0.47890037,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "fe3f4930af01cf1df7260cdcf0a15f286f0eabeb0068440cb75243ffdfe3e8e6",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 156.842,
+            "timestamp_start": 81.951,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.47629777,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-021",
+      "query": "¿Qué fuente contiene los valores x=27 e y=16?",
+      "latency_ms": 1215.6100999563932,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:fd35b5b54b4d2c8f",
+          "score": 0.48668516,
+          "metadata": {
+            "chunk_index": 15,
+            "content_hash": "5dc7eb63f26fae66adc775fed2e4086f9dd302a9b6ea6b9f4f9deb8a41ce6d75",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e41a95165a68bf4d",
+          "score": 0.4636628,
+          "metadata": {
+            "chunk_index": 11,
+            "content_hash": "54b67ed0827d0b0b329d41c4f14a6f4792348e6a5e9c8aa6d41301a968e46a96",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:29416e008b4dd8ce",
+          "score": 0.45590374,
+          "metadata": {
+            "chunk_index": 10,
+            "content_hash": "dc02c21561a47d18b0920e49298fd4521932cf3120e275b5bb65a3b3d11c94fe",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:b3497c38a8ae29e0",
+          "score": 0.44756287,
+          "metadata": {
+            "chunk_index": 13,
+            "content_hash": "2b9cde59def92041182e742b17238c45aed68a2229864ad76ebb056b05b652bb",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:44774aaa82cabe7e",
+          "score": 0.43286604,
+          "metadata": {
+            "chunk_index": 5,
+            "content_hash": "b0b46ea152553f6ef8b051e07988e06fd85d3b9143be56926816d8218a3c4109",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-022",
+      "query": "¿Cómo se aplica la raíz cuadrada al resolver 3x²-12=0?",
+      "latency_ms": 1359.187699854374,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:f086db7b871cbe15",
+          "score": 0.61895317,
+          "metadata": {
+            "chunk_index": 17,
+            "content_hash": "393e97d198974faa2cfa2805b8b4106556e6866e2a9523cbbc6d0a3829b0a677",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:c96e577e2bfda429",
+          "score": 0.5131249,
+          "metadata": {
+            "chunk_index": 21,
+            "content_hash": "eec0ed4b71cf84803ff28fa873bae667c65a9668739106369ea4106ccfe0c8ec",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:20c2927349a846b5",
+          "score": 0.5122225,
+          "metadata": {
+            "chunk_index": 19,
+            "content_hash": "7bd794b439faf179025578ae1d9bb85f043a42492e6cb7372e2f830cc791ad74",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.47429156,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:51b86ef9b924da55",
+          "score": 0.4692087,
+          "metadata": {
+            "chunk_index": 18,
+            "content_hash": "1ae97493c3c8156931d8e9aa0473e7035bb2a232375f10ee59015c6c0eacef6f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-023",
+      "query": "¿Qué relación hay entre álgebra y resolución de problemas?",
+      "latency_ms": 1344.0881001297385,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:455624310ec30b9c",
+          "score": 0.6357411,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "bead76ab926ae0d7d9c33629d57e98579a572e864d8185545b9bce278b528a34",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:e521976fb2a49137",
+          "score": 0.59548116,
+          "metadata": {
+            "chunk_index": 2,
+            "content_hash": "9049d2ae43d7ab3145d9822c827b2490241cab809c931934321842f5cecfd880",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:05918ce4fb692e59",
+          "score": 0.5762092,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "b21a312270ac24f0f4f6392b04a9aae7b9c169db8b1de86e7dc970a21c4e539c",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:fda0c90f80327221",
+          "score": 0.5669931,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "1678e8a9b2b6dba408269c9e7c78ca902e61f7f838ea887a957f9c8921798bcd",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 81.95100000000001,
+            "timestamp_start": 6.74,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        },
+        {
+          "candidate_id": "yt-math-antics-algebra-smoke:ff7e51a9cdf7ad67",
+          "score": 0.5539639,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "fe3f4930af01cf1df7260cdcf0a15f286f0eabeb0068440cb75243ffdfe3e8e6",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "66e1f8ae125aa4b74d59b9fb7f235c95ad6d0397dbf882a7adbddb63854ebcc9",
+            "document_id": "6219a358f36e5d83ea393a4d5ea647b0",
+            "duration_seconds": 725.62,
+            "ingested_at": "2026-08-28T06:50:09.800855+00:00",
+            "language": "en",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "yt-math-antics-algebra-smoke",
+            "source_type": "youtube",
+            "status": "ACTIVE",
+            "timestamp_end": 156.842,
+            "timestamp_start": 81.951,
+            "title": "Math Antics - Basic Algebra",
+            "url": "https://www.youtube.com/watch?v=NybHckSEQBI"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "live-cal-024",
+      "query": "¿Qué estrategias didácticas recomienda el material?",
+      "latency_ms": 1649.9894999433309,
+      "error": null,
+      "candidates": [
+        {
+          "candidate_id": "web-sep-algebra-smoke:05918ce4fb692e59",
+          "score": 0.4780909,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "b21a312270ac24f0f4f6392b04a9aae7b9c169db8b1de86e7dc970a21c4e539c",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "pedagogy-api-fixture:1632ee173ca6ec17",
+          "score": 0.46011126,
+          "metadata": {
+            "chunk_index": 0,
+            "content_hash": "1372609d997cfac8eabd08e7b7407f45cfb6b9f55ecb10fbe364a21170d45291",
+            "document_hash": "1372609d997cfac8eabd08e7b7407f45cfb6b9f55ecb10fbe364a21170d45291",
+            "document_id": "910012925bf7160558df2ea3ebe6a5ba",
+            "ingested_at": "2026-08-27T23:46:52.520316+00:00",
+            "language": "und",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "pedagogy-api-fixture",
+            "source_type": "txt",
+            "status": "ACTIVE",
+            "title": "pedagogy-api-fixture-1553ab7964c94b828a2fbee58f21b905"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:455624310ec30b9c",
+          "score": 0.44291854,
+          "metadata": {
+            "chunk_index": 1,
+            "content_hash": "bead76ab926ae0d7d9c33629d57e98579a572e864d8185545b9bce278b528a34",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:18649f54a862fde8",
+          "score": 0.41609365,
+          "metadata": {
+            "chunk_index": 16,
+            "content_hash": "5bdca3d05dac9f5bf8e5191e74779e079e64e42f9349e05432d497929a71e09f",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        },
+        {
+          "candidate_id": "web-sep-algebra-smoke:fd35b5b54b4d2c8f",
+          "score": 0.404583,
+          "metadata": {
+            "chunk_index": 15,
+            "content_hash": "5dc7eb63f26fae66adc775fed2e4086f9dd302a9b6ea6b9f4f9deb8a41ce6d75",
+            "course_id": "matematicas-secundaria",
+            "document_hash": "9d01daca386fa593c82ed3081178a5bbacf29ca73502d3b6ee9a5beef763948f",
+            "document_id": "e51c0ac4cb563d26cfb2e2814c0f4183",
+            "ingested_at": "2026-08-28T06:46:52.035775+00:00",
+            "language": "es",
+            "library_id": "default",
+            "schema_version": "2",
+            "source_id": "web-sep-algebra-smoke",
+            "source_type": "web",
+            "status": "ACTIVE",
+            "title": "Álgebra - Aprende en Casa SEP",
+            "url": "https://aprendeencasa.sep.gob.mx/secundaria/algebra/"
+          }
+        }
+      ]
+    }
+  ]
+}

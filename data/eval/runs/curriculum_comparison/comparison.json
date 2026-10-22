@@ -1,0 +1,165 @@
+{
+  "split": "calibration",
+  "results": [
+    {
+      "task_id": "cur-001",
+      "mode": "full",
+      "valid": true,
+      "errors": [],
+      "checks": {
+        "schema": true,
+        "hours": true,
+        "objectives_observable": true,
+        "units": true,
+        "alignment_structural": true,
+        "alignment_lexical_signal": true,
+        "didactic_nonempty": true,
+        "citations_authorized": true,
+        "counts": true
+      },
+      "topic_title": "Resolución y Explicación de Ecuaciones Lineales de Primer Grado",
+      "unit_count": 2,
+      "total_hours": 6.0,
+      "richness": {
+        "complete_didactic_fields_rate": 1.0,
+        "activities_per_unit": 2.0,
+        "questions_per_unit": 2.0,
+        "common_misconceptions_per_unit": 1.0
+      }
+    },
+    {
+      "task_id": "cur-002",
+      "mode": "full",
+      "valid": false,
+      "errors": [
+        "objective must start with recognized infinitive: realizar"
+      ],
+      "checks": {
+        "schema": true,
+        "hours": true,
+        "objectives_observable": false,
+        "units": true,
+        "alignment_structural": true,
+        "alignment_lexical_signal": true,
+        "didactic_nonempty": true,
+        "citations_authorized": true,
+        "counts": true
+      },
+      "topic_title": "Operaciones Fundamentales con Fracciones en Educación Secundaria",
+      "unit_count": 2,
+      "total_hours": 4.0,
+      "richness": {
+        "complete_didactic_fields_rate": 1.0,
+        "activities_per_unit": 2.0,
+        "questions_per_unit": 1.0,
+        "common_misconceptions_per_unit": 1.0
+      }
+    },
+    {
+      "task_id": "cur-006",
+      "mode": "full",
+      "valid": true,
+      "errors": [],
+      "checks": {
+        "schema": true,
+        "hours": true,
+        "objectives_observable": true,
+        "units": true,
+        "alignment_structural": true,
+        "alignment_lexical_signal": true,
+        "didactic_nonempty": true,
+        "citations_authorized": true,
+        "counts": true
+      },
+      "topic_title": "Curso de Probabilidad para Preparatoria",
+      "unit_count": 2,
+      "total_hours": 6.0,
+      "richness": {
+        "complete_didactic_fields_rate": 1.0,
+        "activities_per_unit": 2.0,
+        "questions_per_unit": 1.0,
+        "common_misconceptions_per_unit": 2.0
+      }
+    },
+    {
+      "task_id": "cur-001",
+      "mode": "architecture",
+      "valid": true,
+      "errors": [],
+      "checks": {
+        "schema": true,
+        "hours": true,
+        "objectives_observable": true,
+        "units": true,
+        "alignment_structural": true,
+        "alignment_lexical_signal": true,
+        "didactic_nonempty": true,
+        "citations_authorized": true,
+        "counts": true
+      },
+      "topic_title": "Resolución y Explicación de Ecuaciones Lineales de Primer Grado",
+      "unit_count": 2,
+      "total_hours": 6.0,
+      "richness": {
+        "complete_didactic_fields_rate": 1.0,
+        "activities_per_unit": 2.0,
+        "questions_per_unit": 2.0,
+        "common_misconceptions_per_unit": 1.0
+      }
+    },
+    {
+      "task_id": "cur-002",
+      "mode": "architecture",
+      "valid": false,
+      "errors": [
+        "objective must start with recognized infinitive: realizar"
+      ],
+      "checks": {
+        "schema": true,
+        "hours": true,
+        "objectives_observable": false,
+        "units": true,
+        "alignment_structural": true,
+        "alignment_lexical_signal": true,
+        "didactic_nonempty": true,
+        "citations_authorized": true,
+        "counts": true
+      },
+      "topic_title": "Operaciones Fundamentales con Fracciones en Educación Secundaria",
+      "unit_count": 2,
+      "total_hours": 4.0,
+      "richness": {
+        "complete_didactic_fields_rate": 1.0,
+        "activities_per_unit": 2.0,
+        "questions_per_unit": 1.0,
+        "common_misconceptions_per_unit": 1.0
+      }
+    },
+    {
+      "task_id": "cur-006",
+      "mode": "architecture",
+      "valid": true,
+      "errors": [],
+      "checks": {
+        "schema": true,
+        "hours": true,
+        "objectives_observable": true,
+        "units": true,
+        "alignment_structural": true,
+        "alignment_lexical_signal": true,
+        "didactic_nonempty": true,
+        "citations_authorized": true,
+        "counts": true
+      },
+      "topic_title": "Curso de Probabilidad para Preparatoria",
+      "unit_count": 2,
+      "total_hours": 6.0,
+      "richness": {
+        "complete_didactic_fields_rate": 1.0,
+        "activities_per_unit": 2.0,
+        "questions_per_unit": 1.0,
+        "common_misconceptions_per_unit": 2.0
+      }
+    }
+  ]
+}

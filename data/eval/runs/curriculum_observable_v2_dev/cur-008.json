@@ -1,0 +1,360 @@
+{
+  "task_id": "cur-008",
+  "split": "dev",
+  "mode": "architecture",
+  "prompt_variant": "observable-v2",
+  "status": "completed",
+  "prompt_hashes": {
+    "curriculum_architect": "3d78168420fcbbba",
+    "teaching": "e69cf06b9818c81b"
+  },
+  "attempts": 1,
+  "fallbacks": 0,
+  "repairs": 0,
+  "errors": [],
+  "operations": {
+    "architecture": {
+      "events": [
+        {
+          "model": "gemini-3.5-flash",
+          "kind": "structured",
+          "status": "success",
+          "latency_ms": 9787.482500076294,
+          "fallback": false,
+          "repair": false,
+          "prompt_tokens": 696,
+          "output_tokens": 2294,
+          "total_tokens": 2990
+        }
+      ],
+      "summary": {
+        "calls": 1,
+        "fallbacks": 0,
+        "repairs": 0,
+        "prompt_tokens": 696,
+        "output_tokens": 2294,
+        "total_tokens": 2990,
+        "latency_p50_ms": 9787.482500076294,
+        "latency_p95_ms": 9787.482500076294,
+        "statuses": {
+          "success": 1
+        },
+        "errors": []
+      }
+    }
+  },
+  "architecture_model": "gemini-3.5-flash",
+  "architecture_usage": {
+    "prompt_tokens": 696,
+    "output_tokens": 2294,
+    "other_tokens": 0,
+    "total_tokens": 2990
+  },
+  "curriculum": {
+    "schema_version": "observable-v2",
+    "topic_title": "Diseño de Bases de Datos Relacionales",
+    "target_level": "Universitario (Pregrado en Ingeniería o Tecnología)",
+    "pedagogical_approach": "Alineación constructiva y aprendizaje activo basado en resolución de problemas prácticos con andamiaje progresivo.",
+    "learning_objectives": [
+      "Diseñar modelos entidad-relación (ER) que representen fielmente las reglas de negocio de un escenario real.",
+      "Transformar un modelo entidad-relación en un esquema de base de datos relacional aplicando reglas de derivación lógica.",
+      "Normalizar esquemas de bases de datos relacionales hasta la tercera forma normal (3FN) para eliminar redundancias y anomalías de actualización."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Modelado Conceptual de Datos: Modelo Entidad-Relación",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Identificación de entidades y atributos",
+          "Definición de claves primarias",
+          "Establecimiento de relaciones y cardinalidad (1:1, 1:N, N:M)"
+        ],
+        "didactic_explanation": "En esta unidad introducimos el modelado de datos abstracto. Se enseña a transcribir requerimientos de lenguaje natural a un diagrama estructurado. El foco está en discriminar qué información constituye una entidad independiente y cómo se conectan mediante cardinalidades, usando andamiaje visual guiado.",
+        "practical_activities": [
+          "Modelar de forma colaborativa el sistema de inscripciones de una pequeña academia.",
+          "Resolver un caso práctico individual sobre un sistema de alquiler de vehículos."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "¿Cuál es la diferencia entre una relación 1:N y una relación N:M en términos de almacenamiento de datos?",
+            "expected_answer": "En una relación 1:N, la clave primaria de la entidad del lado '1' se coloca como clave foránea en la tabla del lado 'N'. En una relación N:M, se requiere crear una tabla intermedia que almacene las claves de ambas entidades."
+          }
+        ],
+        "prerequisites": [
+          "Concepto básico de estructura de datos en informática"
+        ],
+        "learning_outcomes": [
+          "Identificar entidades y sus claves primarias a partir de un texto de requisitos.",
+          "Construir un diagrama entidad-relación completo que contenga cardinalidades explícitas."
+        ],
+        "essential_concepts": [
+          "Entidad",
+          "Atributo",
+          "Clave primaria",
+          "Cardinalidad",
+          "Relación"
+        ],
+        "common_misconceptions": [
+          "Confundir un atributo con una entidad independiente, o modelar procesos dinámicos temporales como si fuesen entidades estáticas."
+        ],
+        "guided_activity": "El docente proyecta un texto de requisitos para una tienda en línea, subraya en vivo los sustantivos (posibles entidades) y verbos (relaciones), y modela la solución en pizarra interactiva invitando a los alumnos a decidir el tipo de cardinalidad.",
+        "independent_activity": "Los estudiantes reciben un caso de un consultorio médico y deben dibujar individualmente un diagrama ER que resuelva el almacenamiento de pacientes, citas, médicos y recetas.",
+        "formative_assessment": "Evaluación por pares de los diagramas resultantes utilizando una lista de cotejo con 5 criterios específicos de cardinalidad y claves.",
+        "evidence_of_learning": [
+          "Diagrama Entidad-Relación en formato digital que resuelva el caso del consultorio médico."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Derivación al Modelo Relacional",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Reglas de transformación de entidades a tablas",
+          "Mapeo de relaciones 1:1, 1:N y N:M",
+          "Definición de restricciones de integridad referencial (claves foráneas)"
+        ],
+        "didactic_explanation": "Se explica el paso del mundo conceptual (diagramas) al lógico (tablas). Los estudiantes aprenden que cada decisión de diseño tomada en el diagrama ER tiene una traducción algorítmica y exacta a tablas, columnas y restricciones de clave.",
+        "practical_activities": [
+          "Transformar el diagrama ER de la academia obtenido en la unidad anterior a un esquema relacional de tablas.",
+          "Identificar errores en un esquema relacional mal derivado."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Al derivar una relación N:M, ¿qué sucede con los atributos que pertenecían a la relación?",
+            "expected_answer": "Se convierten en columnas de la nueva tabla intermedia creada para romper la relación N:M, junto con las claves primarias de ambas entidades."
+          }
+        ],
+        "prerequisites": [
+          "Dominio de la creación de diagramas Entidad-Relación y cardinalidades."
+        ],
+        "learning_outcomes": [
+          "Traducir diagramas conceptuales a esquemas relacionales tabulares.",
+          "Especificar de forma rigurosa las restricciones de clave foránea (FK) y clave primaria (PK)."
+        ],
+        "essential_concepts": [
+          "Tabla",
+          "Clave Foránea (FK)",
+          "Integridad Referencial",
+          "Esquema Relacional"
+        ],
+        "common_misconceptions": [
+          "Olvidar colocar la clave foránea en el lado correcto (lado 'N') al derivar relaciones 1:N, duplicando datos innecesariamente."
+        ],
+        "guided_activity": "Resolución conjunta de un ejercicio de mapeo complejo paso a paso, donde el docente va tachando del diagrama ER cada elemento conforme se plasma en el esquema de tablas.",
+        "independent_activity": "Los alumnos transforman de manera autónoma su diagrama del consultorio médico a un modelo físico-lógico detallado (esquema de tablas con tipos de datos indicados).",
+        "formative_assessment": "Cuestionario de opción múltiple de 5 preguntas sobre la ubicación correcta de claves foráneas según la cardinalidad dada.",
+        "evidence_of_learning": [
+          "Documento con el esquema relacional de tablas derivado, declarando explícitamente PKs y FKs."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "unit_number": 3,
+        "unit_name": "Normalización de Bases de Datos",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Anomalías de inserción, modificación y eliminación",
+          "Primera Forma Normal (1FN): atomicidad",
+          "Segunda Forma Normal (2FN): dependencia funcional total",
+          "Tercera Forma Normal (3FN): eliminación de dependencias transitivas"
+        ],
+        "didactic_explanation": "Esta unidad cierra el ciclo de diseño garantizando la calidad del esquema mediante el proceso formal de normalización. Se analiza el impacto de las redundancias y se aplican las tres primeras formas normales como técnica de descomposición sin pérdida de información.",
+        "practical_activities": [
+          "Identificar anomalías en una tabla única gigante que contiene datos de facturación de clientes.",
+          "Descomponer la tabla gigante aplicando secuencialmente 1FN, 2FN y 3FN."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "¿Cuándo se dice que una tabla viola la Segunda Forma Normal?",
+            "expected_answer": "Cuando tiene una clave primaria compuesta y existen atributos que no son clave que dependen únicamente de una parte de esa clave primaria (dependencia parcial)."
+          }
+        ],
+        "prerequisites": [
+          "Comprensión de esquemas relacionales, claves primarias y claves foráneas."
+        ],
+        "learning_outcomes": [
+          "Detectar anomalías de diseño en tablas no normalizadas.",
+          "Normalizar esquemas de tablas hasta la Tercera Forma Normal (3FN) mediante descomposición."
+        ],
+        "essential_concepts": [
+          "Normalización",
+          "Dependencia Funcional",
+          "Dependencia Transitiva",
+          "Forma Normal",
+          "Anomalía de Datos"
+        ],
+        "common_misconceptions": [
+          "Creer que normalizar es solo separar tablas de forma intuitiva, omitiendo la validación rigurosa de dependencias funcionales."
+        ],
+        "guided_activity": "El docente presenta una tabla plana de una hoja de cálculo real de un negocio y la guía en directo en su descomposición formal en 1FN, luego en 2FN y finalmente en 3FN.",
+        "independent_activity": "Los estudiantes normalizan una estructura de datos de boletas de calificaciones universitarias que presenta dependencias parciales y transitivas.",
+        "formative_assessment": "Ticket de salida (Exit Ticket) donde los estudiantes justifican con una frase si un esquema propuesto de tres columnas cumple o no con la 3FN.",
+        "evidence_of_learning": [
+          "Informe práctico de normalización de un caso desestructurado, documentando las transiciones paso a paso (1FN, 2FN, 3FN)."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "grounding_status": "UNSUPPORTED"
+  },
+  "warnings": [],
+  "architecture": {
+    "schema_version": "observable-v2",
+    "topic_title": "Diseño de Bases de Datos Relacionales",
+    "target_level": "Universitario (Pregrado en Ingeniería o Tecnología)",
+    "pedagogical_approach": "Alineación constructiva y aprendizaje activo basado en resolución de problemas prácticos con andamiaje progresivo.",
+    "learning_objectives": [
+      "Diseñar modelos entidad-relación (ER) que representen fielmente las reglas de negocio de un escenario real.",
+      "Transformar un modelo entidad-relación en un esquema de base de datos relacional aplicando reglas de derivación lógica.",
+      "Normalizar esquemas de bases de datos relacionales hasta la tercera forma normal (3FN) para eliminar redundancias y anomalías de actualización."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Modelado Conceptual de Datos: Modelo Entidad-Relación",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Identificación de entidades y atributos",
+          "Definición de claves primarias",
+          "Establecimiento de relaciones y cardinalidad (1:1, 1:N, N:M)"
+        ],
+        "didactic_explanation": "En esta unidad introducimos el modelado de datos abstracto. Se enseña a transcribir requerimientos de lenguaje natural a un diagrama estructurado. El foco está en discriminar qué información constituye una entidad independiente y cómo se conectan mediante cardinalidades, usando andamiaje visual guiado.",
+        "practical_activities": [
+          "Modelar de forma colaborativa el sistema de inscripciones de una pequeña academia.",
+          "Resolver un caso práctico individual sobre un sistema de alquiler de vehículos."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "¿Cuál es la diferencia entre una relación 1:N y una relación N:M en términos de almacenamiento de datos?",
+            "expected_answer": "En una relación 1:N, la clave primaria de la entidad del lado '1' se coloca como clave foránea en la tabla del lado 'N'. En una relación N:M, se requiere crear una tabla intermedia que almacene las claves de ambas entidades."
+          }
+        ],
+        "prerequisites": [
+          "Concepto básico de estructura de datos en informática"
+        ],
+        "learning_outcomes": [
+          "Identificar entidades y sus claves primarias a partir de un texto de requisitos.",
+          "Construir un diagrama entidad-relación completo que contenga cardinalidades explícitas."
+        ],
+        "essential_concepts": [
+          "Entidad",
+          "Atributo",
+          "Clave primaria",
+          "Cardinalidad",
+          "Relación"
+        ],
+        "common_misconceptions": [
+          "Confundir un atributo con una entidad independiente, o modelar procesos dinámicos temporales como si fuesen entidades estáticas."
+        ],
+        "guided_activity": "El docente proyecta un texto de requisitos para una tienda en línea, subraya en vivo los sustantivos (posibles entidades) y verbos (relaciones), y modela la solución en pizarra interactiva invitando a los alumnos a decidir el tipo de cardinalidad.",
+        "independent_activity": "Los estudiantes reciben un caso de un consultorio médico y deben dibujar individualmente un diagrama ER que resuelva el almacenamiento de pacientes, citas, médicos y recetas.",
+        "formative_assessment": "Evaluación por pares de los diagramas resultantes utilizando una lista de cotejo con 5 criterios específicos de cardinalidad y claves.",
+        "evidence_of_learning": [
+          "Diagrama Entidad-Relación en formato digital que resuelva el caso del consultorio médico."
+        ],
+        "evidence_chunk_ids": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Derivación al Modelo Relacional",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Reglas de transformación de entidades a tablas",
+          "Mapeo de relaciones 1:1, 1:N y N:M",
+          "Definición de restricciones de integridad referencial (claves foráneas)"
+        ],
+        "didactic_explanation": "Se explica el paso del mundo conceptual (diagramas) al lógico (tablas). Los estudiantes aprenden que cada decisión de diseño tomada en el diagrama ER tiene una traducción algorítmica y exacta a tablas, columnas y restricciones de clave.",
+        "practical_activities": [
+          "Transformar el diagrama ER de la academia obtenido en la unidad anterior a un esquema relacional de tablas.",
+          "Identificar errores en un esquema relacional mal derivado."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Al derivar una relación N:M, ¿qué sucede con los atributos que pertenecían a la relación?",
+            "expected_answer": "Se convierten en columnas de la nueva tabla intermedia creada para romper la relación N:M, junto con las claves primarias de ambas entidades."
+          }
+        ],
+        "prerequisites": [
+          "Dominio de la creación de diagramas Entidad-Relación y cardinalidades."
+        ],
+        "learning_outcomes": [
+          "Traducir diagramas conceptuales a esquemas relacionales tabulares.",
+          "Especificar de forma rigurosa las restricciones de clave foránea (FK) y clave primaria (PK)."
+        ],
+        "essential_concepts": [
+          "Tabla",
+          "Clave Foránea (FK)",
+          "Integridad Referencial",
+          "Esquema Relacional"
+        ],
+        "common_misconceptions": [
+          "Olvidar colocar la clave foránea en el lado correcto (lado 'N') al derivar relaciones 1:N, duplicando datos innecesariamente."
+        ],
+        "guided_activity": "Resolución conjunta de un ejercicio de mapeo complejo paso a paso, donde el docente va tachando del diagrama ER cada elemento conforme se plasma en el esquema de tablas.",
+        "independent_activity": "Los alumnos transforman de manera autónoma su diagrama del consultorio médico a un modelo físico-lógico detallado (esquema de tablas con tipos de datos indicados).",
+        "formative_assessment": "Cuestionario de opción múltiple de 5 preguntas sobre la ubicación correcta de claves foráneas según la cardinalidad dada.",
+        "evidence_of_learning": [
+          "Documento con el esquema relacional de tablas derivado, declarando explícitamente PKs y FKs."
+        ],
+        "evidence_chunk_ids": []
+      },
+      {
+        "unit_number": 3,
+        "unit_name": "Normalización de Bases de Datos",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Anomalías de inserción, modificación y eliminación",
+          "Primera Forma Normal (1FN): atomicidad",
+          "Segunda Forma Normal (2FN): dependencia funcional total",
+          "Tercera Forma Normal (3FN): eliminación de dependencias transitivas"
+        ],
+        "didactic_explanation": "Esta unidad cierra el ciclo de diseño garantizando la calidad del esquema mediante el proceso formal de normalización. Se analiza el impacto de las redundancias y se aplican las tres primeras formas normales como técnica de descomposición sin pérdida de información.",
+        "practical_activities": [
+          "Identificar anomalías en una tabla única gigante que contiene datos de facturación de clientes.",
+          "Descomponer la tabla gigante aplicando secuencialmente 1FN, 2FN y 3FN."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "¿Cuándo se dice que una tabla viola la Segunda Forma Normal?",
+            "expected_answer": "Cuando tiene una clave primaria compuesta y existen atributos que no son clave que dependen únicamente de una parte de esa clave primaria (dependencia parcial)."
+          }
+        ],
+        "prerequisites": [
+          "Comprensión de esquemas relacionales, claves primarias y claves foráneas."
+        ],
+        "learning_outcomes": [
+          "Detectar anomalías de diseño en tablas no normalizadas.",
+          "Normalizar esquemas de tablas hasta la Tercera Forma Normal (3FN) mediante descomposición."
+        ],
+        "essential_concepts": [
+          "Normalización",
+          "Dependencia Funcional",
+          "Dependencia Transitiva",
+          "Forma Normal",
+          "Anomalía de Datos"
+        ],
+        "common_misconceptions": [
+          "Creer que normalizar es solo separar tablas de forma intuitiva, omitiendo la validación rigurosa de dependencias funcionales."
+        ],
+        "guided_activity": "El docente presenta una tabla plana de una hoja de cálculo real de un negocio y la guía en directo en su descomposición formal en 1FN, luego en 2FN y finalmente en 3FN.",
+        "independent_activity": "Los estudiantes normalizan una estructura de datos de boletas de calificaciones universitarias que presenta dependencias parciales y transitivas.",
+        "formative_assessment": "Ticket de salida (Exit Ticket) donde los estudiantes justifican con una frase si un esquema propuesto de tres columnas cumple o no con la 3FN.",
+        "evidence_of_learning": [
+          "Informe práctico de normalización de un caso desestructurado, documentando las transiciones paso a paso (1FN, 2FN, 3FN)."
+        ],
+        "evidence_chunk_ids": []
+      }
+    ],
+    "assumptions": [
+      "La duración total del taller es de 3 semanas, con sesiones semanales de 2 horas, sumando un total exacto de 6 horas presenciales/síncronas.",
+      "El curso está diseñado para estudiantes de nivel universitario sin conocimientos previos profundos de bases de datos, pero familiarizados con el uso básico de computadoras.",
+      "Dado que no se proporcionaron fuentes externas en la biblioteca de origen (NO_SOURCES), el contenido sigue estrictamente los principios universales de diseño relacional propuestos por la literatura general de las ciencias de la computación."
+    ]
+  },
+  "latency_ms": 12947.4
+}

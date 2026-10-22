@@ -1,0 +1,17 @@
+{
+  "collection": "tutor_eval_bge_m3_v1",
+  "model": "bge-m3",
+  "point_count": 27,
+  "vector_dimension": 1024,
+  "embedding_ms": 36651,
+  "qdrant_ms": 463,
+  "total_ms": 38757,
+  "source_counts": {
+    "pedagogy-api-fixture": 1,
+    "web-sep-algebra-smoke": 23,
+    "yt-math-antics-algebra-smoke": 3
+  },
+  "memory_rss_bytes": null,
+  "disk_free_bytes": null,
+  "wall_ms": 38758
+}

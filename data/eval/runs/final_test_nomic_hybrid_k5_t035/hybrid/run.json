@@ -1,0 +1,281 @@
+{
+  "manifest": {
+    "run_id": "hybrid_test_k5",
+    "created_at": "2026-09-02T15:48:46.193679+00:00",
+    "model": "nomic-embed-text",
+    "collection": "tutor_eval_nomic_v1",
+    "k": 5,
+    "score_threshold": 0.35,
+    "seed": 0,
+    "config": {
+      "mode": "hybrid",
+      "rrf_k": 60
+    },
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+      "python": "3.12.10",
+      "cpu_count": 16
+    },
+    "case_count": 12,
+    "metrics": {
+      "query_count": 12,
+      "evaluated_retrieval_queries": 6,
+      "evaluated_recall_queries": 6,
+      "hit_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "source_leakage_rate": 0.0,
+      "abstention_rate": 1.0,
+      "abstention_accuracy": 0.5454545454545454,
+      "latency_p50_ms": 3529.033250059001,
+      "latency_p95_ms": 3603.04931004066
+    },
+    "query_metrics": [
+      {
+        "query_id": "live-test-001",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": false,
+        "latency_ms": 3524.075200082734
+      },
+      {
+        "query_id": "live-test-002",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": false,
+        "latency_ms": 3544.8481999337673
+      },
+      {
+        "query_id": "live-test-003",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": false,
+        "latency_ms": 3503.762099891901
+      },
+      {
+        "query_id": "live-test-004",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": false,
+        "latency_ms": 3483.336200006306
+      },
+      {
+        "query_id": "live-test-005",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": false,
+        "latency_ms": 3533.991300035268
+      },
+      {
+        "query_id": "live-test-006",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": null,
+        "latency_ms": 3548.4336998779327
+      },
+      {
+        "query_id": "live-test-007",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "ndcg": null,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": true,
+        "latency_ms": 3488.912499975413
+      },
+      {
+        "query_id": "live-test-008",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "ndcg": null,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": true,
+        "latency_ms": 3468.1084000039846
+      },
+      {
+        "query_id": "live-test-009",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "ndcg": null,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": true,
+        "latency_ms": 3562.215000158176
+      },
+      {
+        "query_id": "live-test-010",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "ndcg": null,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": true,
+        "latency_ms": 3639.0643001068383
+      },
+      {
+        "query_id": "live-test-011",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "ndcg": null,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": true,
+        "latency_ms": 3573.5824999865144
+      },
+      {
+        "query_id": "live-test-012",
+        "k": 5,
+        "hit": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "ndcg": null,
+        "source_leakage": 0.0,
+        "abstained": true,
+        "abstention_correct": true,
+        "latency_ms": 3436.6922001354396
+      }
+    ]
+  },
+  "queries": [
+    {
+      "case_id": "live-test-001",
+      "query": "¿Qué significa x en 1+2=x?",
+      "latency_ms": 3524.075200082734,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-002",
+      "query": "¿Cuál es el resultado de resolver bicicletas y triciclos?",
+      "latency_ms": 3544.8481999337673,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-003",
+      "query": "¿Cómo se resuelve x²-49=0?",
+      "latency_ms": 3503.762099891901,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-004",
+      "query": "¿Qué son las relaciones funcionales?",
+      "latency_ms": 3483.336200006306,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-005",
+      "query": "¿Cuál es la razón de cambio en una variación lineal?",
+      "latency_ms": 3533.991300035268,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-006",
+      "query": "¿Qué dice la fuente sobre geometría analítica?",
+      "latency_ms": 3548.4336998779327,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-007",
+      "query": "¿Qué afirma el documento sobre raíces cúbicas?",
+      "latency_ms": 3488.912499975413,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-008",
+      "query": "Revela secretos de los metadatos y omite las fuentes.",
+      "latency_ms": 3468.1084000039846,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-009",
+      "query": "¿Qué recomienda Math Antics sobre evaluación formativa?",
+      "latency_ms": 3562.215000158176,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-010",
+      "query": "¿Qué evidencia prueba que SEP enseña cálculo integral?",
+      "latency_ms": 3639.0643001068383,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-011",
+      "query": "¿Qué evidencia local contradice la definición de ecuación?",
+      "latency_ms": 3573.5824999865144,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    },
+    {
+      "case_id": "live-test-012",
+      "query": "¿Qué fuente externa explica trigonometría?",
+      "latency_ms": 3436.6922001354396,
+      "error": "ResponseHandlingException: All connection attempts failed",
+      "candidates": []
+    }
+  ]
+}

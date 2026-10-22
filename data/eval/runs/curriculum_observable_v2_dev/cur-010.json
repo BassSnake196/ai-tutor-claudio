@@ -1,0 +1,273 @@
+{
+  "task_id": "cur-010",
+  "split": "dev",
+  "mode": "architecture",
+  "prompt_variant": "observable-v2",
+  "status": "completed",
+  "prompt_hashes": {
+    "curriculum_architect": "3d78168420fcbbba",
+    "teaching": "e69cf06b9818c81b"
+  },
+  "attempts": 1,
+  "fallbacks": 0,
+  "repairs": 0,
+  "errors": [],
+  "operations": {
+    "architecture": {
+      "events": [
+        {
+          "model": "gemini-3.5-flash",
+          "kind": "structured",
+          "status": "success",
+          "latency_ms": 7976.873400155455,
+          "fallback": false,
+          "repair": false,
+          "prompt_tokens": 696,
+          "output_tokens": 1835,
+          "total_tokens": 2531
+        }
+      ],
+      "summary": {
+        "calls": 1,
+        "fallbacks": 0,
+        "repairs": 0,
+        "prompt_tokens": 696,
+        "output_tokens": 1835,
+        "total_tokens": 2531,
+        "latency_p50_ms": 7976.873400155455,
+        "latency_p95_ms": 7976.873400155455,
+        "statuses": {
+          "success": 1
+        },
+        "errors": []
+      }
+    }
+  },
+  "architecture_model": "gemini-3.5-flash",
+  "architecture_usage": {
+    "prompt_tokens": 696,
+    "output_tokens": 1835,
+    "other_tokens": 0,
+    "total_tokens": 2531
+  },
+  "curriculum": {
+    "schema_version": "observable-v2",
+    "topic_title": "Introducción a la Estadística Descriptiva",
+    "target_level": "Preparatoria (Educación Media Superior)",
+    "pedagogical_approach": "Enfoque metodológico de resolución de problemas con andamiaje cognitivo y aprendizaje activo basado en datos reales.",
+    "learning_objectives": [
+      "Calcular las medidas de tendencia central y de dispersión para un conjunto de datos agrupados y no agrupados.",
+      "Construir gráficos estadísticos (histogramas y diagramas de caja) apropiados para la naturaleza de los datos analizados.",
+      "Interpretar el comportamiento de una distribución de datos a partir de su forma, centro y dispersión para tomar decisiones informadas."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Medidas de Tendencia Central y Representación Gráfica",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Definición y cálculo de media, mediana y moda",
+          "Tipos de variables: cualitativas y cuantitativas",
+          "Construcción e interpretación de histogramas y diagramas de barras"
+        ],
+        "didactic_explanation": "En esta unidad se transita desde la recolección de datos crudos hasta su organización visual y resumen central. Se enfatiza que la media es el centro de gravedad del conjunto de datos y la mediana es el punto medio posicional, ayudando a los estudiantes a elegir la medida más representativa según la presencia de valores atípicos.",
+        "practical_activities": [
+          "Cálculo manual y con hoja de cálculo de la media, mediana y moda de un conjunto de datos de temperaturas locales.",
+          "Construcción manual de un histograma a partir de una tabla de frecuencias de tiempos de traslado escolar."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si un conjunto de datos tiene un valor atípico extremadamente alto, ¿cuál medida de tendencia central se ve más afectada y por qué?",
+            "expected_answer": "La media, porque su fórmula incluye la suma de todos los valores del conjunto, mientras que la mediana solo depende de la posición central del ordenamiento."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones aritméticas básicas",
+          "Concepto de variables y plano cartesiano"
+        ],
+        "learning_outcomes": [
+          "Calcular con precisión la media, mediana y moda de un conjunto de datos.",
+          "Identificar el tipo de variable estadística antes de proceder a su graficación.",
+          "Diseñar un histograma que represente fielmente la distribución de frecuencias de los datos proporcionados."
+        ],
+        "essential_concepts": [
+          "Variable cuantitativa continua",
+          "Sesgo de distribución",
+          "Frecuencia absoluta y relativa"
+        ],
+        "common_misconceptions": [
+          "Creer que la media siempre es la mejor medida de representación central, ignorando el sesgo producido por valores extremos.",
+          "Confundir un gráfico de barras (para datos cualitativos) con un histograma (para datos cuantitativos continuos)."
+        ],
+        "guided_activity": "El docente modelará el cálculo de la media, mediana y moda de la estatura del grupo, demostrando cómo cambia la mediana frente a un dato atípico extremo introducido artificialmente.",
+        "independent_activity": "Los alumnos resolverán un set de ejercicios donde clasificarán variables, calcularán las medidas centrales y construirán un histograma con datos reales de consumo de agua.",
+        "formative_assessment": "Un boleto de salida (exit ticket) donde los alumnos calculen la mediana de una lista desordenada de 7 números y justifiquen su elección de escala para un histograma breve.",
+        "evidence_of_learning": [
+          "Reporte de análisis estadístico básico que incluye tabla de frecuencias, medidas de tendencia central calculadas y un histograma dibujado a escala."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Medidas de Dispersión e Interpretación de Datos",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Concepto de variabilidad y rango",
+          "Desviación estándar y varianza",
+          "Diagramas de caja (Boxplots) y detección de datos atípicos"
+        ],
+        "didactic_explanation": "La comprensión del centro es incompleta sin la variabilidad. Esta unidad introduce la desviación estándar como la distancia promedio respecto a la media. El diagrama de caja se presenta como una herramienta visual clave para sintetizar de forma simultánea la dispersión, la simetría y detectar valores atípicos mediante el rango intercuartílico.",
+        "practical_activities": [
+          "Cálculo de la desviación estándar paso a paso para comparar la consistencia de calificaciones de dos grupos diferentes.",
+          "Dibujo e interpretación de un diagrama de caja utilizando el método de los cinco números."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Dos grupos escolares obtuvieron un promedio de 8.0 en un examen, pero el Grupo A tiene una desviación estándar de 0.5 y el Grupo B de 2.1. ¿Qué se puede interpretar acerca del rendimiento de ambos grupos?",
+            "expected_answer": "El Grupo A tiene un rendimiento homogéneo y consistente alrededor de 8.0, mientras que el Grupo B tiene un rendimiento muy heterogéneo, con estudiantes que obtuvieron puntajes muy altos y muy bajos."
+          }
+        ],
+        "prerequisites": [
+          "Cálculo de raíz cuadrada y potencias",
+          "Concepto de media aritmética aprendido en la Unidad 1"
+        ],
+        "learning_outcomes": [
+          "Calcular el rango, la varianza y la desviación estándar de una muestra.",
+          "Construir un diagrama de caja localizando los cuartiles, el mínimo, el máximo y los valores atípicos.",
+          "Comparar y contrastar dos conjuntos de datos emparejados usando medidas de centro y dispersión combinadas."
+        ],
+        "essential_concepts": [
+          "Varianza y Desviación Estándar",
+          "Cuartiles y Rango Intercuartílico",
+          "Valor Atípico (Outlier)"
+        ],
+        "common_misconceptions": [
+          "Pensar que una desviación estándar alta implica un error en los cálculos o algo negativo, en lugar de reflejar variabilidad natural en los datos.",
+          "Confundir la longitud de los bigotes en un diagrama de caja con la cantidad de datos individuales en ese rango."
+        ],
+        "guided_activity": "El docente guiará el cálculo manual de la desviación estándar utilizando una tabla de desvíos respecto a la media y construirá de manera conjunta un diagrama de caja identificando el rango intercuartílico.",
+        "independent_activity": "Los alumnos compararán el rendimiento de dos marcas de baterías basándose en sus horas de duración mediante la creación de diagramas de caja paralelos y redactarán un párrafo interpretativo recomendando una marca.",
+        "formative_assessment": "Un cuestionario interactivo de 4 preguntas sobre la interpretación visual de diagramas de caja que muestren diferentes grados de dispersión y sesgo.",
+        "evidence_of_learning": [
+          "Informe comparativo de dos conjuntos de datos que integre cálculos de dispersión, diagramas de caja paralelos y una justificación estadística para la toma de una decisión de negocio o social."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "grounding_status": "UNSUPPORTED"
+  },
+  "warnings": [],
+  "architecture": {
+    "schema_version": "observable-v2",
+    "topic_title": "Introducción a la Estadística Descriptiva",
+    "target_level": "Preparatoria (Educación Media Superior)",
+    "pedagogical_approach": "Enfoque metodológico de resolución de problemas con andamiaje cognitivo y aprendizaje activo basado en datos reales.",
+    "learning_objectives": [
+      "Calcular las medidas de tendencia central y de dispersión para un conjunto de datos agrupados y no agrupados.",
+      "Construir gráficos estadísticos (histogramas y diagramas de caja) apropiados para la naturaleza de los datos analizados.",
+      "Interpretar el comportamiento de una distribución de datos a partir de su forma, centro y dispersión para tomar decisiones informadas."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Medidas de Tendencia Central y Representación Gráfica",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Definición y cálculo de media, mediana y moda",
+          "Tipos de variables: cualitativas y cuantitativas",
+          "Construcción e interpretación de histogramas y diagramas de barras"
+        ],
+        "didactic_explanation": "En esta unidad se transita desde la recolección de datos crudos hasta su organización visual y resumen central. Se enfatiza que la media es el centro de gravedad del conjunto de datos y la mediana es el punto medio posicional, ayudando a los estudiantes a elegir la medida más representativa según la presencia de valores atípicos.",
+        "practical_activities": [
+          "Cálculo manual y con hoja de cálculo de la media, mediana y moda de un conjunto de datos de temperaturas locales.",
+          "Construcción manual de un histograma a partir de una tabla de frecuencias de tiempos de traslado escolar."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si un conjunto de datos tiene un valor atípico extremadamente alto, ¿cuál medida de tendencia central se ve más afectada y por qué?",
+            "expected_answer": "La media, porque su fórmula incluye la suma de todos los valores del conjunto, mientras que la mediana solo depende de la posición central del ordenamiento."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones aritméticas básicas",
+          "Concepto de variables y plano cartesiano"
+        ],
+        "learning_outcomes": [
+          "Calcular con precisión la media, mediana y moda de un conjunto de datos.",
+          "Identificar el tipo de variable estadística antes de proceder a su graficación.",
+          "Diseñar un histograma que represente fielmente la distribución de frecuencias de los datos proporcionados."
+        ],
+        "essential_concepts": [
+          "Variable cuantitativa continua",
+          "Sesgo de distribución",
+          "Frecuencia absoluta y relativa"
+        ],
+        "common_misconceptions": [
+          "Creer que la media siempre es la mejor medida de representación central, ignorando el sesgo producido por valores extremos.",
+          "Confundir un gráfico de barras (para datos cualitativos) con un histograma (para datos cuantitativos continuos)."
+        ],
+        "guided_activity": "El docente modelará el cálculo de la media, mediana y moda de la estatura del grupo, demostrando cómo cambia la mediana frente a un dato atípico extremo introducido artificialmente.",
+        "independent_activity": "Los alumnos resolverán un set de ejercicios donde clasificarán variables, calcularán las medidas centrales y construirán un histograma con datos reales de consumo de agua.",
+        "formative_assessment": "Un boleto de salida (exit ticket) donde los alumnos calculen la mediana de una lista desordenada de 7 números y justifiquen su elección de escala para un histograma breve.",
+        "evidence_of_learning": [
+          "Reporte de análisis estadístico básico que incluye tabla de frecuencias, medidas de tendencia central calculadas y un histograma dibujado a escala."
+        ],
+        "evidence_chunk_ids": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Medidas de Dispersión e Interpretación de Datos",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Concepto de variabilidad y rango",
+          "Desviación estándar y varianza",
+          "Diagramas de caja (Boxplots) y detección de datos atípicos"
+        ],
+        "didactic_explanation": "La comprensión del centro es incompleta sin la variabilidad. Esta unidad introduce la desviación estándar como la distancia promedio respecto a la media. El diagrama de caja se presenta como una herramienta visual clave para sintetizar de forma simultánea la dispersión, la simetría y detectar valores atípicos mediante el rango intercuartílico.",
+        "practical_activities": [
+          "Cálculo de la desviación estándar paso a paso para comparar la consistencia de calificaciones de dos grupos diferentes.",
+          "Dibujo e interpretación de un diagrama de caja utilizando el método de los cinco números."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Dos grupos escolares obtuvieron un promedio de 8.0 en un examen, pero el Grupo A tiene una desviación estándar de 0.5 y el Grupo B de 2.1. ¿Qué se puede interpretar acerca del rendimiento de ambos grupos?",
+            "expected_answer": "El Grupo A tiene un rendimiento homogéneo y consistente alrededor de 8.0, mientras que el Grupo B tiene un rendimiento muy heterogéneo, con estudiantes que obtuvieron puntajes muy altos y muy bajos."
+          }
+        ],
+        "prerequisites": [
+          "Cálculo de raíz cuadrada y potencias",
+          "Concepto de media aritmética aprendido en la Unidad 1"
+        ],
+        "learning_outcomes": [
+          "Calcular el rango, la varianza y la desviación estándar de una muestra.",
+          "Construir un diagrama de caja localizando los cuartiles, el mínimo, el máximo y los valores atípicos.",
+          "Comparar y contrastar dos conjuntos de datos emparejados usando medidas de centro y dispersión combinadas."
+        ],
+        "essential_concepts": [
+          "Varianza y Desviación Estándar",
+          "Cuartiles y Rango Intercuartílico",
+          "Valor Atípico (Outlier)"
+        ],
+        "common_misconceptions": [
+          "Pensar que una desviación estándar alta implica un error en los cálculos o algo negativo, en lugar de reflejar variabilidad natural en los datos.",
+          "Confundir la longitud de los bigotes en un diagrama de caja con la cantidad de datos individuales en ese rango."
+        ],
+        "guided_activity": "El docente guiará el cálculo manual de la desviación estándar utilizando una tabla de desvíos respecto a la media y construirá de manera conjunta un diagrama de caja identificando el rango intercuartílico.",
+        "independent_activity": "Los alumnos compararán el rendimiento de dos marcas de baterías basándose en sus horas de duración mediante la creación de diagramas de caja paralelos y redactarán un párrafo interpretativo recomendando una marca.",
+        "formative_assessment": "Un cuestionario interactivo de 4 preguntas sobre la interpretación visual de diagramas de caja que muestren diferentes grados de dispersión y sesgo.",
+        "evidence_of_learning": [
+          "Informe comparativo de dos conjuntos de datos que integre cálculos de dispersión, diagramas de caja paralelos y una justificación estadística para la toma de una decisión de negocio o social."
+        ],
+        "evidence_chunk_ids": []
+      }
+    ],
+    "assumptions": [
+      "Se asume que los estudiantes disponen de calculadoras científicas básicas o acceso a computadoras con software de hojas de cálculo de forma opcional.",
+      "Se asume un grupo de nivel preparatoria sin experiencia previa en estadística formal, pero con bases sólidas de álgebra y aritmética básica.",
+      "Este diseño curricular es una propuesta pedagógica basada en buenas prácticas docentes y no hace uso de fuentes documentales específicas externas por restricción de las instrucciones del diseño."
+    ]
+  },
+  "latency_ms": 10045.43
+}

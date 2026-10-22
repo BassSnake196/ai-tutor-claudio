@@ -1,0 +1,35 @@
+{
+  "dataset_id": "retrieval-es-live-seed",
+  "version": "1.1.0-seed",
+  "schema": "QueryCase.v1",
+  "language": "es",
+  "status": "seed_requires_human_curation",
+  "purpose": "Semilla reproducible basada exclusivamente en el snapshot payload-only de tutor_documents; no es gold humano ni benchmark final.",
+  "query_file": "dataset.v1.jsonl",
+  "query_file_sha256": "6924b30dbf49cf52231c04c749ee20ba9c485512f9a9f3cfd347214a8fc2d497",
+  "corpus_snapshot": "corpus.v1.jsonl",
+  "corpus_snapshot_sha256": "9453bb914c46d41bf919998d1ba95bfcc6bd307ebdf0f522af06584ce3a311c7",
+  "collection": "tutor_documents",
+  "export_contract": "point_id + payload, sin vectores; scroll completo ordenado por chunk_id",
+  "source_counts": {
+    "web-sep-algebra-smoke": 23,
+    "yt-math-antics-algebra-smoke": 3,
+    "pedagogy-api-fixture": 1
+  },
+  "splits": {
+    "calibration": 24,
+    "dev": 12,
+    "test": 12
+  },
+  "qrel_scale": {
+    "0": "irrelevante",
+    "1": "parcialmente_relevante",
+    "2": "directamente_relevante"
+  },
+  "curation_required": [
+    "Todas las etiquetas fueron generadas por coincidencia temática y requieren curación humana; no llamarlas gold.",
+    "Revisar especialmente grados 1, categorías esperadas y casos de fuente/idioma.",
+    "No ejecutar el split test contra modelos durante esta ola.",
+    "Añadir más documentos y consultas fuera de álgebra antes de publicar métricas generales."
+  ]
+}

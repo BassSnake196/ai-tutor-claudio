@@ -1,0 +1,287 @@
+{
+  "task_id": "cur-001",
+  "split": "calibration",
+  "mode": "full",
+  "status": "completed",
+  "prompt_hashes": {
+    "curriculum_architect": "ae0a89e6c3fccb5f",
+    "teaching": "e69cf06b9818c81b"
+  },
+  "attempts": 1,
+  "fallbacks": 0,
+  "repairs": 0,
+  "errors": [],
+  "architecture_reused": true,
+  "operations": {
+    "teaching": {
+      "events": [
+        {
+          "model": "gemini-3.5-flash",
+          "kind": "structured",
+          "status": "success",
+          "latency_ms": 23650.832099840045,
+          "fallback": false,
+          "repair": false,
+          "prompt_tokens": 2356,
+          "output_tokens": 3157,
+          "total_tokens": 8742
+        }
+      ],
+      "summary": {
+        "calls": 1,
+        "fallbacks": 0,
+        "repairs": 0,
+        "prompt_tokens": 2356,
+        "output_tokens": 3157,
+        "total_tokens": 8742,
+        "latency_p50_ms": 23650.832099840045,
+        "latency_p95_ms": 23650.832099840045,
+        "statuses": {
+          "success": 1
+        },
+        "errors": []
+      }
+    }
+  },
+  "teaching_model": "gemini-3.5-flash",
+  "teaching_usage": {
+    "prompt_tokens": 2356,
+    "output_tokens": 3157,
+    "other_tokens": 3229,
+    "total_tokens": 8742
+  },
+  "curriculum": {
+    "schema_version": "1.0.0",
+    "topic_title": "Resolución y Explicación de Ecuaciones Lineales de Primer Grado",
+    "target_level": "Educación Secundaria (12-14 años)",
+    "pedagogical_approach": "Enfoque Constructivista basado en la Modelación Matemática y Aprendizaje Activo con Andamiaje Cognitivo",
+    "learning_objectives": [
+      "Identificar y modelar situaciones reales mediante ecuaciones lineales de una incógnita.",
+      "Resolver ecuaciones lineales aplicando de manera sistemática y justificada las propiedades de la igualdad.",
+      "Explicar verbalmente y de forma escrita el procedimiento de resolución de una ecuación lineal utilizando lenguaje algebraico formal."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Concepto de Igualdad y Propiedades de la Balanza",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "El concepto de equivalencia algebraica",
+          "Propiedades de la igualdad (suma, resta, multiplicación y división)",
+          "Modelado de ecuaciones sencillas mediante el modelo de balanza"
+        ],
+        "didactic_explanation": "Activación de conocimientos previos: Recordar que una igualdad numérica expresa la equivalencia de dos operaciones (ej. 5+3 = 8). Intuición pedagógica: Imaginemos una balanza clásica de dos platos perfectamente equilibrada con pesos idénticos en cada lado. Si añadimos un peso en un lado, la balanza se inclina; para recuperar el equilibrio, es obligatorio añadir exactamente el mismo peso en el lado contrario. Formalización: Una ecuación como x + 5 = 12 es una balanza en equilibrio donde x es el peso desconocido. Para aislar x en el plato izquierdo, debemos restar 5 de ese plato, lo que exige restar 5 también en el plato derecho para preservar la igualdad matemática: (x + 5) - 5 = 12 - 5, resultando en x = 7. Ejemplo trabajado paso a paso: Para resolver x - 3 = 8: 1) Identificar la operación que acompaña a la incógnita (restar 3). 2) Aplicar la operación inversa en ambos miembros de la ecuación: x - 3 + 3 = 8 + 3. 3) Simplificar ambos lados: x = 11. 4) Comprobación: Sustituir x por 11 en la ecuación original (11 - 3 = 8, lo cual es verdadero). Contraejemplo y error común: Resolver x + 4 = 10 y escribir x = 10 + 4 = 14 bajo la idea errónea de que 'el número pasa al otro lado' sin entender que, para eliminar un +4, es obligatorio restar 4 en ambos miembros (x + 4 - 4 = 10 - 4), dando x = 6.",
+        "practical_activities": [
+          "Simulación interactiva con balanzas virtuales para equilibrar pesos desconocidos.",
+          "Traducción de enunciados simples del lenguaje cotidiano al lenguaje algebraico."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si tenemos la ecuación x + 5 = 12, ¿qué operación debemos realizar en ambos lados de la igualdad para aislar la x y por qué?",
+            "expected_answer": "Se debe restar 5 en ambos miembros de la ecuación para mantener el equilibrio de la igualdad, obteniendo x = 7."
+          },
+          {
+            "question": "Explica la diferencia entre una expresión algebraica y una ecuación lineal.",
+            "expected_answer": "Una expresión algebraica es una combinación de números y letras sin un signo de igualdad, mientras que una ecuación es una igualdad matemática entre dos expresiones que contiene una o más incógnitas."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones aritméticas básicas",
+          "Uso básico de variables y literales en expresiones sencillas"
+        ],
+        "learning_outcomes": [
+          "Aplica las propiedades de la igualdad para simplificar ecuaciones lineales de un solo paso.",
+          "Explica el concepto de equilibrio algebraico mediante representaciones gráficas."
+        ],
+        "essential_concepts": [
+          "Igualdad matemática",
+          "Propiedad aditiva",
+          "Propiedad multiplicativa",
+          "Incógnita"
+        ],
+        "common_misconceptions": [
+          "Pensar que los términos 'pasan al otro lado' cambiando de signo de forma mágica, sin comprender que se aplica la misma operación inversa en ambos miembros de la igualdad."
+        ],
+        "guided_activity": "Instrucciones para el docente: Dibujar una balanza equilibrada en el pizarrón mostrando una caja marcada con 'x' y 3 esferas de 1 kg en el plato izquierdo, y 7 esferas de 1 kg en el plato derecho. Guiar la discusión con preguntas de andamiaje decreciente para que el grupo proponga cómo aislar la 'x'. Instrucciones para el estudiante: Dibuja las dos fases del equilibrio de la balanza en tu cuaderno. En el primer dibujo representa el estado inicial (x + 3 = 7). En el segundo dibujo representa la extracción simultánea de 3 esferas en ambos platos, escribiendo la igualdad x = 4. Criterio de éxito: El estudiante dibuja la balanza de manera equivalente y formaliza el paso matemático usando la sustracción en ambos miembros.",
+        "independent_activity": "Instrucciones para el estudiante: Resuelve de manera autónoma las ecuaciones 1) x - 6 = 14 y 2) 5x = 30 en tu cuaderno. Para cada una debes representar el esquema de balance (balanza o barras de longitud), aplicar la operación matemática inversa correspondiente de manera uniforme en ambos lados y realizar la verificación del valor obtenido sustituyendo el resultado en la ecuación original. Criterio de éxito: Resolución correcta obteniendo x = 20 y x = 6, con el desarrollo detallado de la operación inversa en cada miembro y su verificación explícita.",
+        "formative_assessment": "Instrucciones para el docente: Entregar un boleto de salida individual de 5 minutos al término de la clase. Instrucciones para el estudiante: Resuelve la ecuación x / 4 = 3 justificando por escrito qué propiedad matemática utilizaste para encontrar el valor de la incógnita. Criterio de éxito: El estudiante determina que x = 12 explicando explícitamente que multiplicó por 4 ambos miembros de la ecuación para anular la división, manteniendo la igualdad.",
+        "evidence_of_learning": [
+          "Portafolio de ejercicios con resolución gráfica de balanzas equivalentes y su conversión a ecuaciones formales."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Resolución Formal y Argumentación del Procedimiento",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Ecuaciones lineales con coeficientes enteros y fraccionarios",
+          "Reducción de términos semejantes en ambos miembros de la ecuación",
+          "Redacción de explicaciones procedimentales algebraicas"
+        ],
+        "didactic_explanation": "Activación de conocimientos previos: Recordar cómo simplificar sumas y restas de términos semejantes (ej. 3x - x = 2x) y la propiedad distributiva. Intuición pedagógica: Imaginemos que tenemos juguetes y cajas mezcladas en ambos lados de una habitación. Antes de mover cosas a través del pasillo, es más fácil agrupar todas las cajas idénticas que estén en un mismo rincón y todas las piezas sueltas que estén juntas. Esto simplifica nuestra tarea antes de balancear. Formalización: Para resolver 3x + 4 = x - 8 agrupamos términos semejantes y luego aplicamos las propiedades de igualdad para despejar la variable de forma lógica. Ejemplo trabajado paso a paso: Resolver 2(x - 3) = 10. Paso 1 (Propiedad Distributiva): Multiplicar el factor 2 por cada término dentro del paréntesis: 2x - 6 = 10. Paso 2 (Propiedad Aditiva): Sumar 6 a ambos miembros de la ecuación para eliminar el término independiente del lado izquierdo: 2x - 6 + 6 = 10 + 6, simplificado como 2x = 16. Paso 3 (Propiedad Multiplicativa): Dividir ambos miembros por 2 para aislar x: 2x / 2 = 16 / 2, resultando en x = 8. Paso 4 (Comprobación): Sustituir x en la ecuación original: 2(8 - 3) = 2(5) = 10 (Verificado). Contraejemplo y error común: Resolver 3(x - 2) = 15 y escribir 3x - 2 = 15, olvidando aplicar la multiplicación distributiva al segundo término (-2), lo que desvirtúa la equivalencia original.",
+        "practical_activities": [
+          "Taller de 'Corrección de errores comunes' donde analizan ecuaciones resueltas de forma incorrecta y argumentan el fallo.",
+          "Juego de roles 'Estudiante y Tutor' en parejas para verbalizar los pasos del despeje."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Dada la ecuación 2(x - 3) = 10, ¿cuál es el primer paso recomendado para resolverla y qué propiedad fundamenta esta acción?",
+            "expected_answer": "El primer paso es aplicar la propiedad distributiva para eliminar el paréntesis, resultando en 2x - 6 = 10, o bien dividir ambos miembros por 2 usando la propiedad multiplicativa para obtener x - 3 = 5."
+          },
+          {
+            "question": "Resuelve la ecuación 3x + 4 = x - 8 y describe el procedimiento seguido en cada línea del desarrollo.",
+            "expected_answer": "Restamos x en ambos lados: 2x + 4 = -8. Restamos 4 en ambos lados: 2x = -12. Dividimos entre 2 en ambos lados: x = -6."
+          }
+        ],
+        "prerequisites": [
+          "Comprensión de las propiedades de la igualdad",
+          "Ley de los signos para la multiplicación y división",
+          "Reducción de términos semejantes"
+        ],
+        "learning_outcomes": [
+          "Resuelve ecuaciones lineales que involucren paréntesis y múltiples pasos.",
+          "Formula explicaciones argumentadas y estructuradas de cada fase de su resolución."
+        ],
+        "essential_concepts": [
+          "Términos semejantes",
+          "Propiedad distributiva",
+          "Algoritmo de resolución",
+          "Verificación de la solución"
+        ],
+        "common_misconceptions": [
+          "Multiplicar solo el primer término dentro del paréntesis al aplicar la propiedad distributiva (ej. 2(x - 3) como 2x - 3 en lugar de 2x - 6)."
+        ],
+        "guided_activity": "Instrucciones para el docente: Presentar la ecuación 4x - 7 = 2x + 9 en la pizarra dividida en dos columnas: 'Operación Matemática' y 'Razón Algebraica'. Guiar al alumnado en la resolución conjunta: completar colectivamente las razones para cada paso técnico de manera secuencial (por ejemplo, por qué restamos 2x o por qué sumamos 7). Instrucciones para el estudiante: Registra el desarrollo ordenado de la ecuación en tu cuaderno completando la justificación de cada renglón matemático. Criterio de éxito: Explicación adecuada de cada transformación aplicando el nombre formal de la propiedad matemática correspondiente.",
+        "independent_activity": "Instrucciones para el estudiante: Resuelve la actividad autónoma 'El detective de álgebra': Se te entrega el siguiente cálculo con un error común: 4(x - 3) = 8 -> 4x - 3 = 8 -> 4x = 11 -> x = 11/4. Identifica por escrito el error cometido, describe la regla que se infringió y resuelve la ecuación correctamente en tu cuaderno de forma justificada paso a paso. Criterio de éxito: Identificación del fallo en la propiedad distributiva (no multiplicar el -3 por 4) y cálculo correcto de la solución real (x = 5) con su verificación.",
+        "formative_assessment": "Instrucciones para el docente: Diseñar una rúbrica sencilla de coevaluación con tres ítems: 1) ¿Se aplicó la propiedad distributiva de forma correcta en todos los términos?, 2) ¿Se redujeron correctamente los términos semejantes?, 3) ¿Se incluye la comprobación final? Instrucciones para el estudiante: Trabaja en parejas. Intercambien sus soluciones de la ecuación 3(x + 2) = x + 14 y utilicen la rúbrica para revisar el trabajo de su compañero dándole retroalimentación constructiva escrita sobre sus pasos. Criterio de éxito: Evaluación precisa del ejercicio del compañero, marcando aciertos y áreas de mejora según los criterios establecidos.",
+        "evidence_of_learning": [
+          "Reporte escrito individual de resolución de ecuaciones complejas, donde cada paso incluye una justificación teórica explícita empleando vocabulario algebraico."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "grounding_status": "UNSUPPORTED"
+  },
+  "warnings": [],
+  "architecture": {
+    "schema_version": "1.0.0",
+    "topic_title": "Resolución y Explicación de Ecuaciones Lineales de Primer Grado",
+    "target_level": "Educación Secundaria (12-14 años)",
+    "pedagogical_approach": "Enfoque Constructivista basado en la Modelación Matemática y Aprendizaje Activo con Andamiaje Cognitivo",
+    "learning_objectives": [
+      "Identificar y modelar situaciones reales mediante ecuaciones lineales de una incógnita.",
+      "Resolver ecuaciones lineales aplicando de manera sistemática y justificada las propiedades de la igualdad.",
+      "Explicar verbalmente y de forma escrita el procedimiento de resolución de una ecuación lineal utilizando lenguaje algebraico formal."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Concepto de Igualdad y Propiedades de la Balanza",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "El concepto de equivalencia algebraica",
+          "Propiedades de la igualdad (suma, resta, multiplicación y división)",
+          "Modelado de ecuaciones sencillas mediante el modelo de balanza"
+        ],
+        "didactic_explanation": "La unidad aborda la ecuación lineal no como un conjunto de reglas mecánicas de 'despeje', sino como un estado de equilibrio (balanza) que se preserva si se realiza la misma operación matemática en ambos lados. Se utiliza el andamiaje visual para consolidar la noción de equivalencia antes de introducir la abstracción simbólica.",
+        "practical_activities": [
+          "Simulación interactiva con balanzas virtuales para equilibrar pesos desconocidos.",
+          "Traducción de enunciados simples del lenguaje cotidiano al lenguaje algebraico."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si tenemos la ecuación x + 5 = 12, ¿qué operación debemos realizar en ambos lados de la igualdad para aislar la x y por qué?",
+            "expected_answer": "Se debe restar 5 en ambos miembros de la ecuación para mantener el equilibrio de la igualdad, obteniendo x = 7."
+          },
+          {
+            "question": "Explica la diferencia entre una expresión algebraica y una ecuación lineal.",
+            "expected_answer": "Una expresión algebraica es una combinación de números y letras sin un signo de igualdad, mientras que una ecuación es una igualdad matemática entre dos expresiones que contiene una o más incógnitas."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones aritméticas básicas",
+          "Uso básico de variables y literales en expresiones sencillas"
+        ],
+        "learning_outcomes": [
+          "Aplica las propiedades de la igualdad para simplificar ecuaciones lineales de un solo paso.",
+          "Explica el concepto de equilibrio algebraico mediante representaciones gráficas."
+        ],
+        "essential_concepts": [
+          "Igualdad matemática",
+          "Propiedad aditiva",
+          "Propiedad multiplicativa",
+          "Incógnita"
+        ],
+        "common_misconceptions": [
+          "Pensar que los términos 'pasan al otro lado' cambiando de signo de forma mágica, sin comprender que se aplica la misma operación inversa en ambos miembros de la igualdad."
+        ],
+        "guided_activity": "Resolución grupal en pizarrón de ecuaciones lineales de un paso usando el diagrama de balanza, donde el docente guía el modelado explícito paso a paso de por qué se anula un término.",
+        "independent_activity": "Ficha de trabajo individual con problemas verbales donde el alumno debe plantear la ecuación y resolverla dibujando los pasos de la balanza en su cuaderno.",
+        "formative_assessment": "Preguntas de respuesta rápida tipo 'ticket de salida' donde los estudiantes resuelven una ecuación de un paso y justifican brevemente por escrito su estrategia de resolución.",
+        "evidence_of_learning": [
+          "Portafolio de ejercicios con resolución gráfica de balanzas equivalentes y su conversión a ecuaciones formales."
+        ],
+        "evidence_chunk_ids": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Resolución Formal y Argumentación del Procedimiento",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Ecuaciones lineales con coeficientes enteros y fraccionarios",
+          "Reducción de términos semejantes en ambos miembros de la ecuación",
+          "Redacción de explicaciones procedimentales algebraicas"
+        ],
+        "didactic_explanation": "En esta unidad se formaliza el algoritmo de resolución algebraico y se estimula la metacognición. Los estudiantes resuelven ecuaciones de múltiples pasos (con paréntesis y términos semejantes) y son obligados a describir con lenguaje formal el 'porqué' de cada línea en su libreta, mitigando el error operativo y promoviendo la transferencia.",
+        "practical_activities": [
+          "Taller de 'Corrección de errores comunes' donde analizan ecuaciones resueltas de forma incorrecta y argumentan el fallo.",
+          "Juego de roles 'Estudiante y Tutor' en parejas para verbalizar los pasos del despeje."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Dada la ecuación 2(x - 3) = 10, ¿cuál es el primer paso recomendado para resolverla y qué propiedad fundamenta esta acción?",
+            "expected_answer": "El primer paso es aplicar la propiedad distributiva para eliminar el paréntesis, resultando en 2x - 6 = 10, o bien dividir ambos miembros por 2 usando la propiedad multiplicativa para obtener x - 3 = 5."
+          },
+          {
+            "question": "Resuelve la ecuación 3x + 4 = x - 8 y describe el procedimiento seguido en cada línea del desarrollo.",
+            "expected_answer": "Restamos x en ambos lados: 2x + 4 = -8. Restamos 4 en ambos lados: 2x = -12. Dividimos entre 2 en ambos lados: x = -6."
+          }
+        ],
+        "prerequisites": [
+          "Comprensión de las propiedades de la igualdad",
+          "Ley de los signos para la multiplicación y división",
+          "Reducción de términos semejantes"
+        ],
+        "learning_outcomes": [
+          "Resuelve ecuaciones lineales que involucren paréntesis y múltiples pasos.",
+          "Formula explicaciones argumentadas y estructuradas de cada fase de su resolución."
+        ],
+        "essential_concepts": [
+          "Términos semejantes",
+          "Propiedad distributiva",
+          "Algoritmo de resolución",
+          "Verificación de la solución"
+        ],
+        "common_misconceptions": [
+          "Multiplicar solo el primer término dentro del paréntesis al aplicar la propiedad distributiva (ej. 2(x - 3) como 2x - 3 en lugar de 2x - 6)."
+        ],
+        "guided_activity": "Modelado docente de resolución de una ecuación lineal compleja en el pizarrón dividiendo la pantalla en dos columnas: 'Operación Matemática' y 'Justificación Escrita en Lenguaje Formal'.",
+        "independent_activity": "Desafío autónomo 'El detective de álgebra': los alumnos reciben un set de 5 ecuaciones ya resueltas con errores deliberados; deben encontrar los errores, resolverlas correctamente y escribir un reporte breve explicando el fallo técnico.",
+        "formative_assessment": "Evaluación entre pares mediante una rúbrica sencilla basada en la claridad de la explicación procedimental y la exactitud del resultado numérico.",
+        "evidence_of_learning": [
+          "Reporte escrito individual de resolución de ecuaciones complejas, donde cada paso incluye una justificación teórica explícita empleando vocabulario algebraico."
+        ],
+        "evidence_chunk_ids": []
+      }
+    ],
+    "assumptions": [
+      "Se asume que los estudiantes tienen acceso a cuadernos y calculadora básica para comprobar operaciones aritméticas, aunque el foco es la abstracción algebraica.",
+      "El curso está diseñado para realizarse de forma presencial o híbrida, utilizando recursos analógicos (pizarrón, fichas de trabajo impresas) u opcionalmente digitales.",
+      "No se dispone de fuentes bibliográficas oficiales obligatorias en el prompt, por lo que el diseño constituye una propuesta pedagógica rigurosa y alineada a las mejores prácticas internacionales en educación matemática secundaria."
+    ]
+  },
+  "latency_ms": 26412.39
+}

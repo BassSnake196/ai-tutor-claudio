@@ -1,0 +1,269 @@
+{
+  "task_id": "cur-002",
+  "split": "calibration",
+  "mode": "full",
+  "status": "completed",
+  "prompt_hashes": {
+    "curriculum_architect": "ae0a89e6c3fccb5f",
+    "teaching": "e69cf06b9818c81b"
+  },
+  "attempts": 1,
+  "fallbacks": 0,
+  "repairs": 0,
+  "errors": [],
+  "architecture_reused": true,
+  "operations": {
+    "teaching": {
+      "events": [
+        {
+          "model": "gemini-3.5-flash",
+          "kind": "structured",
+          "status": "success",
+          "latency_ms": 16790.95449997112,
+          "fallback": false,
+          "repair": false,
+          "prompt_tokens": 2104,
+          "output_tokens": 4097,
+          "total_tokens": 6201
+        }
+      ],
+      "summary": {
+        "calls": 1,
+        "fallbacks": 0,
+        "repairs": 0,
+        "prompt_tokens": 2104,
+        "output_tokens": 4097,
+        "total_tokens": 6201,
+        "latency_p50_ms": 16790.95449997112,
+        "latency_p95_ms": 16790.95449997112,
+        "statuses": {
+          "success": 1
+        },
+        "errors": []
+      }
+    }
+  },
+  "teaching_model": "gemini-3.5-flash",
+  "teaching_usage": {
+    "prompt_tokens": 2104,
+    "output_tokens": 4097,
+    "other_tokens": 0,
+    "total_tokens": 6201
+  },
+  "curriculum": {
+    "schema_version": "1.0.0",
+    "topic_title": "Operaciones Fundamentales con Fracciones en Educación Secundaria",
+    "target_level": "Educación Secundaria (Primer Grado)",
+    "pedagogical_approach": "Enfoque de resolución de problemas con andamiaje concreto-pictórico-abstracto (método COPISI) y práctica de recuperación espaciada.",
+    "learning_objectives": [
+      "Identificar y representar fracciones conceptualmente como parte-todo y cociente.",
+      "Realizar adiciones y sustracciones de fracciones con denominadores iguales y diferentes mediante la obtención de mínimos comunes múltiplos.",
+      "Resolver multiplicaciones y divisiones de fracciones utilizando algoritmos estándar y comprendiendo su interpretación gráfica.",
+      "Aplicar las operaciones de fracciones para solucionar problemas contextualizados de la vida cotidiana."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Concepto de Fracción, Suma y Resta",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Definición de fracción y representación gráfica",
+          "Fracciones equivalentes y simplificación",
+          "Adición y sustracción con denominadores iguales",
+          "Adición y sustracción con denominadores distintos (Mínimo Común Múltiplo)"
+        ],
+        "didactic_explanation": "EXPLICACIÓN DIDÁCTICA:\n1. Intuición Inicial: Imagina una barra de chocolate dividida en 4 partes iguales. Si tomas 1 parte, tienes 1/4. El número de abajo (denominador) indica en cuántas partes iguales dividimos la barra entera, y el de arriba (numerador) cuántas partes tomamos. Si tenemos 2/4 de chocolate y nos dan otro 1/4, tendremos en total 3/4. Sumar cosas del mismo tamaño es tan fácil como contar elementos iguales.\n2. La Necesidad del Común Denominador: ¿Qué pasa si intentas sumar 1/2 chocolate con 1/3 de chocolate? No podemos decir simplemente que son '2 partes' porque las partes son de diferentes tamaños. Para poder sumarlas, necesitamos cortar ambas partes para que tengan exactamente el mismo tamaño (fracciones equivalentes con un denominador común). El número mágico para rebanar ambas es el Mínimo Común Múltiplo (MCM) de sus denominadores (2 y 3), que es 6. Así, 1/2 se convierte en 3/6, y 1/3 se convierte en 2/6. Ahora que tienen el mismo tamaño de porción, sumamos: 3/6 + 2/6 = 5/6.\n3. Formalización del Algoritmo:\nPara sumar o restar fracciones heterogéneas (a/b + c/d):\na) Hallar el mínimo común múltiplo (MCM) de los denominadores (b, d). Este será el nuevo denominador común.\nb) Convertir cada fracción a su equivalente multiplicando numerador y denominador por el factor correspondiente: nuevo_numerador = numerador * (MCM / denominador).\nc) Sumar o restar los nuevos numeradores obtenidos y mantener el denominador común en el resultado.\nd) Simplificar el resultado dividiendo numerador y denominador entre su Máximo Común Divisor (MCD) hasta obtener una fracción irreducible.",
+        "practical_activities": [
+          "Modelado con tiras de fracciones de papel.",
+          "Ejercicios de conversión y simplificación en parejas."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Calcula 2/3 + 1/4 y simplifica el resultado.",
+            "expected_answer": "Para sumar 2/3 y 1/4, buscamos el mínimo común múltiplo de 3 y 4, que es 12. Convertimos las fracciones: 2/3 = 8/12 y 1/4 = 3/12. Sumamos: 8/12 + 3/12 = 11/12."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones básicas con números enteros",
+          "Concepto de múltiplos y divisores"
+        ],
+        "learning_outcomes": [
+          "El alumno modela y resuelve sumas y restas de fracciones con diferente denominador de forma correcta."
+        ],
+        "essential_concepts": [
+          "Numerador",
+          "Denominador",
+          "Fracción equivalente",
+          "Mínimo común múltiplo"
+        ],
+        "common_misconceptions": [
+          "Sumar directamente numeradores con numeradores y denominadores con denominadores (por ejemplo, decir que 1/2 + 1/3 = 2/5)."
+        ],
+        "guided_activity": "INSTRUCCIONES PARA EL DOCENTE:\n1. Proyecte o dibuje en la pizarra dos círculos iguales: uno dividido en mitades (1/2) y otro en tercios (1/3). Sombree una parte de cada uno.\n2. Pregunte a la clase si se pueden sumar directamente. Muestre el error típico: 'Si sumamos recto da 2/5. ¿2/5 es más grande o más pequeño que la mitad?'. Razone con ellos que 2/5 es menos de la mitad, lo cual es lógicamente imposible si ya teníamos 1/2.\n3. Superponga una cuadrícula de 6 partes sobre ambos círculos para demostrar de forma visual que 1/2 = 3/6 y 1/3 = 2/6. Una vez que las porciones son del mismo tamaño, proceda a sumar los numeradores: 3/6 + 2/6 = 5/6.\n4. Escriba el proceso numérico formal en la pizarra solicitando la participación activa del grupo para hallar el MCM de los denominadores paso a paso.\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\n1. Observa el ejemplo de las pizzas en la pizarra. Fíjate en cómo cortamos las rebanadas para que tengan el mismo tamaño antes de sumarlas.\n2. En tu cuaderno, copia la operación paso a paso anotando de dónde sale el denominador común (MCM).\n3. Resuelve junto al profesor la siguiente suma en la pizarra: 1/4 + 3/8. Identifica primero cuál es el denominador común antes de escribir el resultado.\n\nCRITERIO DE ÉXITO:\nEl estudiante puede explicar verbalmente por qué no se pueden sumar directamente fracciones de denominadores distintos y muestra el desarrollo completo de la conversión de ambas fracciones al común denominador correcto antes de realizar la suma final.",
+        "independent_activity": "INSTRUCCIONES PARA EL DOCENTE:\n1. Distribuya de manera individual la hoja con 5 problemas contextualizados de la vida real (ej. cantidad de pintura utilizada, ingredientes para un postre, distancia recorrida).\n2. Proporcione soporte diferenciado: entregue tiras de fracciones impresas para los alumnos que necesiten apoyo visual y ofrezca un reto extra de tres fracciones para los alumnos que terminen rápido.\n3. Habilite en la parte posterior del aula la plantilla con las soluciones detalladas para que realicen la autoevaluación.\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\n1. Lee cada uno de los 5 problemas de tu hoja de trabajo.\n2. Resuélvelos de forma individual mostrando todo tu procedimiento matemático: cálculo del MCM, conversión a fracciones equivalentes y simplificación final.\n3. Cuando hayas terminado, dirígete a la estación de autoevaluación, compara tus procedimientos con la plantilla de corrección, identifica si cometiste algún error y corrígelo con bolígrafo verde.\n\nCRITERIO DE ÉXITO:\nEl estudiante resuelve de manera independiente y correcta al menos 4 de los 5 problemas de la hoja, evidenciando por escrito el cálculo del MCM y la simplificación de la fracción resultante.",
+        "formative_assessment": "TICKET DE SALIDA:\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\nResuelve de manera individual y en silencio el siguiente ejercicio en la tarjeta que se te ha entregado: 'Calcula 3/5 - 1/3 y simplifica el resultado si es posible'. Debes escribir todo el procedimiento, incluyendo cómo obtuviste el denominador común. Entrega la tarjeta al docente al salir del aula.\n\nCRITERIO DE ÉXITO:\nEl estudiante calcula de forma autónoma el denominador común correcto (15), realiza la conversión adecuada de los numeradores (9 y 5), efectúa la resta (9/15 - 5/15 = 4/15) y entrega la tarjeta completa sin errores de cálculo.",
+        "evidence_of_learning": [
+          "Hoja de trabajo resuelta con el procedimiento detallado para obtener el común denominador."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Multiplicación, División y Resolución de Problemas",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Multiplicación de fracciones (algoritmo lineal y representación visual)",
+          "División de fracciones (producto cruzado y algoritmo del recíproco)",
+          "Resolución de problemas aplicados"
+        ],
+        "didactic_explanation": "EXPLICACIÓN DIDÁCTICA:\n1. Intuición de la Multiplicación: Multiplicar fracciones significa calcular la fracción de una fracción. Por ejemplo, si tienes 1/2 de un pastel y quieres tomar la mitad (1/2) de ese pedazo, estás buscando cuánto es '1/2 de 1/2'. Visualmente, si divides a la mitad un pedazo que ya era la mitad de un entero, obtienes 1/4 del entero. Numéricamente, esto corresponde a multiplicar recto: (1 * 1) / (2 * 2) = 1/4.\n2. Intuición de la División: Dividir fracciones consiste en saber cuántas veces cabe una fracción dentro de otra. Por ejemplo, si tenemos 3/4 de litro de agua y queremos servirla en vasitos de 1/4 de litro, la división (3/4) / (1/4) nos pregunta: ¿cuántas porciones de 1/4 caben en 3/4? La respuesta visual es evidente: caben exactamente 3 veces.\n3. Formalización de Algoritmos:\na) Multiplicación: Para multiplicar a/b * c/d, multiplicamos de forma lineal numeradores con numeradores y denominadores con denominadores: (a * c) / (b * d). Se recomienda simplificar antes de realizar las multiplicaciones finales para trabajar con números más pequeños.\nb) División: Para dividir (a/b) / (c/d), multiplicamos por la fracción recíproca de la segunda: a/b * d/c = (a * d) / (b * c). Esto equivale al método comúnmente llamado 'producto cruzado'.",
+        "practical_activities": [
+          "Uso de cuadrículas de doble sombreado para visualizar la multiplicación de fracciones.",
+          "Resolución de problemas de recetas de cocina a escala."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Resuelve la siguiente operación: (3/4) dividido por (2/3). Explica el procedimiento.",
+            "expected_answer": "Para dividir 3/4 entre 2/3, multiplicamos el numerador de la primera por el denominador de la segunda para obtener el nuevo numerador (3 * 3 = 9), y el denominador de la primera por el numerador de la segunda para obtener el nuevo denominador (4 * 2 = 8). El resultado es 9/8 (o 1 entero y 1/8)."
+          }
+        ],
+        "prerequisites": [
+          "Comprensión de la multiplicación y división de números enteros",
+          "Suma y resta de fracciones"
+        ],
+        "learning_outcomes": [
+          "El alumno aplica las operaciones de multiplicación y división de fracciones en la resolución de problemas reales."
+        ],
+        "essential_concepts": [
+          "Factor de escala",
+          "Recíproco",
+          "Producto cruzado",
+          "Simplificación previa al producto"
+        ],
+        "common_misconceptions": [
+          "Creer que al multiplicar dos fracciones el resultado siempre debe ser mayor que los factores, o que al dividir el resultado siempre debe ser menor."
+        ],
+        "guided_activity": "INSTRUCCIONES PARA EL DOCENTE:\n1. Plantee el problema: 'Tenemos un terreno y se va a usar 3/4 de él para cultivo. De esa sección de cultivo, la mitad (1/2) se destinará a la siembra de zanahorias. ¿Qué fracción del terreno total ocuparán las zanahorias?'.\n2. Dibuje un rectángulo en el pizarrón que represente el terreno completo. Divídalo verticalmente en 4 partes iguales y sombree 3 partes con líneas azules (3/4).\n3. Ahora, divida el mismo rectángulo de manera horizontal en 2 partes iguales. Sombree la mitad horizontal con líneas rojas (1/2).\n4. Pida a los estudiantes que identifiquen la región donde se cruzan las líneas azules y rojas (el doble sombreado). Cuenten juntos: hay 3 cuadritos con doble sombreado de un total de 8 cuadritos en todo el terreno. El resultado visual es 3/8.\n5. Formalice en el pizarrón escribiendo la operación: 1/2 * 3/4 = (1 * 3) / (2 * 4) = 3/8. Explique que la palabra 'de' en matemáticas se traduce matemáticamente como una multiplicación.\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\n1. Dibuja en tu cuaderno el rectángulo que representa el terreno tal como lo hace el docente en el pizarrón.\n2. Utiliza dos colores de lápices distintos para realizar el doble sombreado y comprobar que el resultado del área sombreada coincide con el algoritmo matemático.\n3. Copia el procedimiento de multiplicación de forma lineal y escribe una breve nota al lado que recuerde que 'el producto de fracciones se realiza de forma directa o lineal'.\n\nCRITERIO DE ÉXITO:\nEl estudiante es capaz de trazar y sombrear de manera precisa una cuadrícula de doble sombreado para demostrar visualmente el resultado de la multiplicación de dos fracciones sencillas y verificar el resultado con el algoritmo de multiplicación lineal.",
+        "independent_activity": "INSTRUCCIONES PARA EL DOCENTE:\n1. Organice a los estudiantes en equipos de tres integrantes. Entregue a cada grupo un set de 'Tarjetas de Recetas a Escala' (ej. una receta que rinde para 4 porciones pero debe ajustarse para preparar solo 1/2 porción, o para preparar 1 entero y 1/2 de la receta original).\n2. El docente debe transitar por las mesas para ofrecer andamiaje, recordando a los estudiantes cómo simplificar fracciones antes de multiplicar para facilitar los cálculos.\n3. Asegúrese de que cada estudiante registre sus propios procedimientos e interpretaciones en su cuaderno de trabajo de manera individual.\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\n1. Trabajen en su equipo de tres integrantes. Lean la tarjeta de receta asignada y determinen qué operación de fracción (multiplicación o división) deben emplear para ajustar los ingredientes de la receta al factor de escala requerido.\n2. Resuelvan cada uno de los problemas en sus cuadernos de manera individual. Deben registrar detalladamente las operaciones matemáticas empleadas y simplificar todas las fracciones resultantes.\n3. Discutan y contrasten sus resultados en equipo para verificar que todos concuerden en el procedimiento y la interpretación del resultado.\n\nCRITERIO DE ÉXITO:\nEl grupo completa de forma correcta el ajuste de todos los ingredientes de la receta, demostrando por escrito el uso adecuado de multiplicaciones y divisiones de fracciones y entregando los resultados simplificados a su forma irreducible.",
+        "formative_assessment": "EVALUACIÓN DE PIZARRAS INDIVIDUALES:\n\nINSTRUCCIONES PARA EL DOCENTE:\n1. Distribuya una pequeña pizarra blanca individual y un marcador a cada estudiante (o bien hojas de papel reutilizables dentro de fundas plásticas transparentes con marcador de agua).\n2. Proponga una serie de 3 ejercicios de multiplicación y división rápidos en la pantalla o pizarrón, uno por uno (ejemplo: 2/5 * 3/4; luego 2/3 dividido por 4/5).\n3. Indique: 'Resuelvan de manera individual en su pizarra en 45 segundos. Al contar tres, todos levantan sus pizarras al mismo tiempo'.\n4. Realice un escaneo visual inmediato de la clase para identificar qué estudiantes presentan problemas o errores típicos de procedimiento.\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\n1. Trabaja de forma individual. Resuelve el ejercicio propuesto en tu pizarra de manera rápida mostrando el algoritmo de resolución.\n2. Mantén tu pizarra hacia abajo para no mostrar la respuesta a tus compañeros antes de tiempo.\n3. Cuando el docente cuente 'tres', levanta tu pizarra a la altura del pecho para mostrar tu respuesta.\n\nCRITERIO DE ÉXITO:\nEl estudiante resuelve correctamente las operaciones en el tiempo asignado, aplicando el algoritmo lineal para la multiplicación y el producto cruzado o recíproco para la división, mostrando sus resultados en su pizarra de manera legible.",
+        "evidence_of_learning": [
+          "Portafolio de problemas de application resueltos con justificación gráfica y algebraica de las operaciones empleadas."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "grounding_status": "UNSUPPORTED"
+  },
+  "warnings": [],
+  "architecture": {
+    "schema_version": "1.0.0",
+    "topic_title": "Operaciones Fundamentales con Fracciones en Educación Secundaria",
+    "target_level": "Educación Secundaria (Primer Grado)",
+    "pedagogical_approach": "Enfoque de resolución de problemas con andamiaje concreto-pictórico-abstracto (método COPISI) y práctica de recuperación espaciada.",
+    "learning_objectives": [
+      "Identificar y representar fracciones conceptualmente como parte-todo y cociente.",
+      "Realizar adiciones y sustracciones de fracciones con denominadores iguales y diferentes mediante la obtención de mínimos comunes múltiplos.",
+      "Resolver multiplicaciones y divisiones de fracciones utilizando algoritmos estándar y comprendiendo su interpretación gráfica.",
+      "Aplicar las operaciones de fracciones para solucionar problemas contextualizados de la vida cotidiana."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Concepto de Fracción, Suma y Resta",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Definición de fracción y representación gráfica",
+          "Fracciones equivalentes y simplificación",
+          "Adición y sustracción con denominadores iguales",
+          "Adición y sustracción con denominadores distintos (Mínimo Común Múltiplo)"
+        ],
+        "didactic_explanation": "Se inicia conectando la fracción con la división de un todo. Se introduce el concepto de equivalencia de forma visual antes de pasar al algoritmo de suma y resta. Para denominadores distintos, se enseña a buscar un denominador común para evitar el error de sumar numeradores con numeradores y denominadores con denominadores.",
+        "practical_activities": [
+          "Modelado con tiras de fracciones de papel.",
+          "Ejercicios de conversión y simplificación en parejas."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Calcula 2/3 + 1/4 y simplifica el resultado.",
+            "expected_answer": "Para sumar 2/3 y 1/4, buscamos el mínimo común múltiplo de 3 y 4, que es 12. Convertimos las fracciones: 2/3 = 8/12 y 1/4 = 3/12. Sumamos: 8/12 + 3/12 = 11/12."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones básicas con números enteros",
+          "Concepto de múltiplos y divisores"
+        ],
+        "learning_outcomes": [
+          "El alumno modela y resuelve sumas y restas de fracciones con diferente denominador de forma correcta."
+        ],
+        "essential_concepts": [
+          "Numerador",
+          "Denominador",
+          "Fracción equivalente",
+          "Mínimo común múltiplo"
+        ],
+        "common_misconceptions": [
+          "Sumar directamente numeradores con numeradores y denominadores con denominadores (por ejemplo, decir que 1/2 + 1/3 = 2/5)."
+        ],
+        "guided_activity": "El docente demuestra cómo resolver un problema de reparto de pizza usando diagramas circulares y luego guía la conversión matemática de fracciones heterogéneas paso a paso en el pizarrón.",
+        "independent_activity": "Los estudiantes resuelven de forma individual una hoja de trabajo con 5 problemas contextualizados de suma y resta de fracciones, autoevaluando sus respuestas con una plantilla provista al final.",
+        "formative_assessment": "Ticket de salida: Resolver de forma individual el ejercicio 3/5 - 1/3 antes de salir del aula.",
+        "evidence_of_learning": [
+          "Hoja de trabajo resuelta con el procedimiento detallado para obtener el común denominador."
+        ],
+        "evidence_chunk_ids": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Multiplicación, División y Resolución de Problemas",
+        "estimated_hours": 2.0,
+        "subtopics": [
+          "Multiplicación de fracciones (algoritmo lineal y representación visual)",
+          "División de fracciones (producto cruzado y algoritmo del recíproco)",
+          "Resolución de problemas aplicados"
+        ],
+        "didactic_explanation": "La multiplicación se presenta como 'la fracción de una fracción' mediante cuadrículas de áreas. La división se explica como cuántas veces cabe una fracción en otra, justificando el uso del producto cruzado para evitar la memorización ciega de reglas.",
+        "practical_activities": [
+          "Uso de cuadrículas de doble sombreado para visualizar la multiplicación de fracciones.",
+          "Resolución de problemas de recetas de cocina a escala."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Resuelve la siguiente operación: (3/4) dividido por (2/3). Explica el procedimiento.",
+            "expected_answer": "Para dividir 3/4 entre 2/3, multiplicamos el numerador de la primera por el denominador de la segunda para obtener el nuevo numerador (3 * 3 = 9), y el denominador de la primera por el numerador de la segunda para obtener el nuevo denominador (4 * 2 = 8). El resultado es 9/8 (o 1 entero y 1/8)."
+          }
+        ],
+        "prerequisites": [
+          "Comprensión de la multiplicación y división de números enteros",
+          "Suma y resta de fracciones"
+        ],
+        "learning_outcomes": [
+          "El alumno aplica las operaciones de multiplicación y división de fracciones en la resolución de problemas reales."
+        ],
+        "essential_concepts": [
+          "Factor de escala",
+          "Recíproco",
+          "Producto cruzado",
+          "Simplificación previa al producto"
+        ],
+        "common_misconceptions": [
+          "Creer que al multiplicar dos fracciones el resultado siempre debe ser mayor que los factores, o que al dividir el resultado siempre debe ser menor."
+        ],
+        "guided_activity": "El docente guía la resolución de un problema donde se requiere calcular la mitad de 3/4 de un terreno, utilizando un diagrama de área interactivo y traduciéndolo al algoritmo matemático.",
+        "independent_activity": "Los estudiantes resuelven un taller de problemas contextualizados (ej. ajustar ingredientes de una receta médica o de cocina) en grupos de tres, discutiendo sus estrategias de resolución.",
+        "formative_assessment": "Pizarras individuales: El docente plantea operaciones de multiplicación y división rápidas, los estudiantes las resuelven y muestran sus resultados al mismo tiempo.",
+        "evidence_of_learning": [
+          "Portafolio de problemas de aplicación resueltos con justificación gráfica y algebraica de las operaciones empleadas."
+        ],
+        "evidence_chunk_ids": []
+      }
+    ],
+    "assumptions": [
+      "Se asume que la duración total permitida es de 4 horas distribuidas en 2 semanas (2 horas por semana).",
+      "Se asume que los estudiantes cuentan con conocimientos básicos de aritmética (tablas de multiplicar, división y concepto de múltiplos), pero carecen de dominio procedimental y conceptual sobre fracciones.",
+      "El diseño curricular es una propuesta pedagógica dado que no se suministraron fuentes bibliográficas de referencia externas."
+    ]
+  },
+  "latency_ms": 18135.5
+}

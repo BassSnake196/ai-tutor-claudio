@@ -1,0 +1,285 @@
+{
+  "task_id": "cur-001",
+  "split": "calibration",
+  "mode": "architecture",
+  "prompt_variant": "observable-v2",
+  "status": "completed",
+  "prompt_hashes": {
+    "curriculum_architect": "3d78168420fcbbba",
+    "teaching": "e69cf06b9818c81b"
+  },
+  "attempts": 1,
+  "fallbacks": 0,
+  "repairs": 0,
+  "errors": [],
+  "operations": {
+    "architecture": {
+      "events": [
+        {
+          "model": "gemini-3.5-flash",
+          "kind": "structured",
+          "status": "success",
+          "latency_ms": 11486.72299995087,
+          "fallback": false,
+          "repair": false,
+          "prompt_tokens": 702,
+          "output_tokens": 1790,
+          "total_tokens": 2492
+        }
+      ],
+      "summary": {
+        "calls": 1,
+        "fallbacks": 0,
+        "repairs": 0,
+        "prompt_tokens": 702,
+        "output_tokens": 1790,
+        "total_tokens": 2492,
+        "latency_p50_ms": 11486.72299995087,
+        "latency_p95_ms": 11486.72299995087,
+        "statuses": {
+          "success": 1
+        },
+        "errors": []
+      }
+    }
+  },
+  "architecture_model": "gemini-3.5-flash",
+  "architecture_usage": {
+    "prompt_tokens": 702,
+    "output_tokens": 1790,
+    "other_tokens": 0,
+    "total_tokens": 2492
+  },
+  "curriculum": {
+    "schema_version": "1.1.0",
+    "topic_title": "Resolución y Explicación de Ecuaciones Lineales de Primer Grado",
+    "target_level": "Secundaria (Primer Grado, 12-13 años)",
+    "pedagogical_approach": "Enfoque de resolución de problemas con andamiaje cognitivo, modelado explícito y modelación matemática (de lo concreto a lo abstracto).",
+    "learning_objectives": [
+      "Resolver ecuaciones lineales con una incógnita en ambos lados de la igualdad mediante el uso de propiedades de la igualdad.",
+      "Justificar el procedimiento paso a paso seguido al resolver ecuaciones lineales utilizando lenguaje matemático preciso."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Fundamentos de la Igualdad y Ecuaciones Lineales Básicas",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "El concepto de igualdad y la metáfora de la balanza",
+          "Propiedades de la igualdad (aditiva y multiplicativa)",
+          "Resolución de ecuaciones de la forma x + a = b y ax = b"
+        ],
+        "didactic_explanation": "Se introduce el concepto de ecuación no como una simple regla de 'despeje', sino como el mantenimiento del equilibrio en una balanza. Cada operación realizada en un miembro de la ecuación debe aplicarse exactamente igual al otro miembro para preservar la igualdad.",
+        "practical_activities": [
+          "Simulación interactiva con balanzas de platillos para equilibrar masas incógnitas.",
+          "Resolución guiada de ecuaciones sumando/restando y multiplicando/dividiendo en ambos lados del signo de igualdad."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si tenemos la ecuación x - 5 = 12, ¿qué operación debemos realizar en ambos lados de la igualdad para aislar la variable?",
+            "expected_answer": "Debemos sumar 5 en ambos lados de la igualdad para anular el -5."
+          },
+          {
+            "question": "Resuelve la ecuación 4x = 24 explicando la propiedad matemática utilizada.",
+            "expected_answer": "Se dividen ambos miembros de la ecuación entre 4 (propiedad multiplicativa de la igualdad), obteniendo x = 6."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones básicas con números enteros",
+          "Concepto de variable o número desconocido"
+        ],
+        "learning_outcomes": [
+          "Resuelve ecuaciones lineales simples aplicando propiedades de la igualdad.",
+          "Explica verbalmente la propiedad aplicada para mantener el equilibrio de la ecuación."
+        ],
+        "essential_concepts": [
+          "Igualdad matemática",
+          "Variable",
+          "Constante",
+          "Operación inversa"
+        ],
+        "common_misconceptions": [
+          "Pensar que los términos 'pasan' al otro lado cambiando de signo mágicamente, sin comprender la aplicación de la operación inversa en ambos miembros."
+        ],
+        "guided_activity": "El docente modela la resolución de x + 7 = 15 usando una balanza dibujada en el pizarrón, realizando físicamente la resta de 7 en ambos platillos.",
+        "independent_activity": "Los estudiantes resuelven una serie de 10 ecuaciones lineales básicas y escriben al lado de cada paso qué operación aplicaron en ambos lados.",
+        "formative_assessment": "Ticket de salida: Resolver 3x = 15 detallando el paso intermedio de división.",
+        "evidence_of_learning": [
+          "Ficha de trabajo con procedimientos detallados y justificaciones de resolución."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Ecuaciones Lineales con Incógnitas en Ambos Lados y Paréntesis",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Reducción de términos semejantes en ecuaciones",
+          "Ecuaciones de la forma ax + b = cx + d",
+          "Uso de la propiedad distributiva para eliminar paréntesis"
+        ],
+        "didactic_explanation": "En esta fase se transita a la resolución de problemas más complejos donde la variable aparece en ambos lados. Se enseña a agrupar los términos con la incógnita en un miembro y las constantes en el otro mediante pasos lógicos y ordenados, previniendo errores de signos al agrupar.",
+        "practical_activities": [
+          "Resolución grupal en pizarras individuales para visualizar y corregir errores de agrupación en tiempo real.",
+          "Actividad de emparejamiento: asociar una ecuación compleja con su paso intermedio simplificado."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Resuelve paso a paso la ecuación 5x - 3 = 2x + 9.",
+            "expected_answer": "Paso 1: Restar 2x en ambos lados (3x - 3 = 9). Paso 2: Sumar 3 en ambos lados (3x = 12). Paso 3: Dividir entre 3 en ambos lados (x = 4)."
+          },
+          {
+            "question": "Al resolver 2(x + 3) = 14, ¿cuál es el primer paso recomendado?",
+            "expected_answer": "Aplicar la propiedad distributiva para obtener 2x + 6 = 14, o bien dividir ambos lados por 2 para obtener x + 3 = 7."
+          }
+        ],
+        "prerequisites": [
+          "Resolución de ecuaciones lineales básicas",
+          "Reducción de términos semejantes",
+          "Propiedad distributiva de la multiplicación"
+        ],
+        "learning_outcomes": [
+          "Resuelve ecuaciones lineales con paréntesis e incógnitas en ambos miembros de la ecuación.",
+          "Justifica por escrito la estrategia elegida para agrupar términos semejantes."
+        ],
+        "essential_concepts": [
+          "Términos semejantes",
+          "Propiedad distributiva",
+          "Agrupación de variables",
+          "Simplificación"
+        ],
+        "common_misconceptions": [
+          "Olvidar multiplicar el segundo término dentro de un paréntesis por el factor externo (ej. escribir 2(x + 3) como 2x + 3 en lugar de 2x + 6)."
+        ],
+        "guided_activity": "El docente guía al grupo en la resolución de 3(x - 2) = x + 4 enfatizando la aplicación de la propiedad distributiva y la posterior transposición de términos con su debida operación inversa.",
+        "independent_activity": "Los alumnos completan un taller interactivo donde se les dan ecuaciones resueltas con errores comunes y deben actuar como 'detectives de matemáticas', identificando, corrigiendo y explicando los errores.",
+        "formative_assessment": "Evaluación rápida en parejas donde un alumno resuelve la ecuación en voz alta explicando los pasos y el otro verifica su validez matemática.",
+        "evidence_of_learning": [
+          "Portafolio de ejercicios resueltos con auto-corrección comentada de errores comunes encontrados."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "grounding_status": "UNSUPPORTED"
+  },
+  "warnings": [],
+  "architecture": {
+    "schema_version": "1.1.0",
+    "topic_title": "Resolución y Explicación de Ecuaciones Lineales de Primer Grado",
+    "target_level": "Secundaria (Primer Grado, 12-13 años)",
+    "pedagogical_approach": "Enfoque de resolución de problemas con andamiaje cognitivo, modelado explícito y modelación matemática (de lo concreto a lo abstracto).",
+    "learning_objectives": [
+      "Resolver ecuaciones lineales con una incógnita en ambos lados de la igualdad mediante el uso de propiedades de la igualdad.",
+      "Justificar el procedimiento paso a paso seguido al resolver ecuaciones lineales utilizando lenguaje matemático preciso."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Fundamentos de la Igualdad y Ecuaciones Lineales Básicas",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "El concepto de igualdad y la metáfora de la balanza",
+          "Propiedades de la igualdad (aditiva y multiplicativa)",
+          "Resolución de ecuaciones de la forma x + a = b y ax = b"
+        ],
+        "didactic_explanation": "Se introduce el concepto de ecuación no como una simple regla de 'despeje', sino como el mantenimiento del equilibrio en una balanza. Cada operación realizada en un miembro de la ecuación debe aplicarse exactamente igual al otro miembro para preservar la igualdad.",
+        "practical_activities": [
+          "Simulación interactiva con balanzas de platillos para equilibrar masas incógnitas.",
+          "Resolución guiada de ecuaciones sumando/restando y multiplicando/dividiendo en ambos lados del signo de igualdad."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si tenemos la ecuación x - 5 = 12, ¿qué operación debemos realizar en ambos lados de la igualdad para aislar la variable?",
+            "expected_answer": "Debemos sumar 5 en ambos lados de la igualdad para anular el -5."
+          },
+          {
+            "question": "Resuelve la ecuación 4x = 24 explicando la propiedad matemática utilizada.",
+            "expected_answer": "Se dividen ambos miembros de la ecuación entre 4 (propiedad multiplicativa de la igualdad), obteniendo x = 6."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones básicas con números enteros",
+          "Concepto de variable o número desconocido"
+        ],
+        "learning_outcomes": [
+          "Resuelve ecuaciones lineales simples aplicando propiedades de la igualdad.",
+          "Explica verbalmente la propiedad aplicada para mantener el equilibrio de la ecuación."
+        ],
+        "essential_concepts": [
+          "Igualdad matemática",
+          "Variable",
+          "Constante",
+          "Operación inversa"
+        ],
+        "common_misconceptions": [
+          "Pensar que los términos 'pasan' al otro lado cambiando de signo mágicamente, sin comprender la aplicación de la operación inversa en ambos miembros."
+        ],
+        "guided_activity": "El docente modela la resolución de x + 7 = 15 usando una balanza dibujada en el pizarrón, realizando físicamente la resta de 7 en ambos platillos.",
+        "independent_activity": "Los estudiantes resuelven una serie de 10 ecuaciones lineales básicas y escriben al lado de cada paso qué operación aplicaron en ambos lados.",
+        "formative_assessment": "Ticket de salida: Resolver 3x = 15 detallando el paso intermedio de división.",
+        "evidence_of_learning": [
+          "Ficha de trabajo con procedimientos detallados y justificaciones de resolución."
+        ],
+        "evidence_chunk_ids": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Ecuaciones Lineales con Incógnitas en Ambos Lados y Paréntesis",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Reducción de términos semejantes en ecuaciones",
+          "Ecuaciones de la forma ax + b = cx + d",
+          "Uso de la propiedad distributiva para eliminar paréntesis"
+        ],
+        "didactic_explanation": "En esta fase se transita a la resolución de problemas más complejos donde la variable aparece en ambos lados. Se enseña a agrupar los términos con la incógnita en un miembro y las constantes en el otro mediante pasos lógicos y ordenados, previniendo errores de signos al agrupar.",
+        "practical_activities": [
+          "Resolución grupal en pizarras individuales para visualizar y corregir errores de agrupación en tiempo real.",
+          "Actividad de emparejamiento: asociar una ecuación compleja con su paso intermedio simplificado."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Resuelve paso a paso la ecuación 5x - 3 = 2x + 9.",
+            "expected_answer": "Paso 1: Restar 2x en ambos lados (3x - 3 = 9). Paso 2: Sumar 3 en ambos lados (3x = 12). Paso 3: Dividir entre 3 en ambos lados (x = 4)."
+          },
+          {
+            "question": "Al resolver 2(x + 3) = 14, ¿cuál es el primer paso recomendado?",
+            "expected_answer": "Aplicar la propiedad distributiva para obtener 2x + 6 = 14, o bien dividir ambos lados por 2 para obtener x + 3 = 7."
+          }
+        ],
+        "prerequisites": [
+          "Resolución de ecuaciones lineales básicas",
+          "Reducción de términos semejantes",
+          "Propiedad distributiva de la multiplicación"
+        ],
+        "learning_outcomes": [
+          "Resuelve ecuaciones lineales con paréntesis e incógnitas en ambos miembros de la ecuación.",
+          "Justifica por escrito la estrategia elegida para agrupar términos semejantes."
+        ],
+        "essential_concepts": [
+          "Términos semejantes",
+          "Propiedad distributiva",
+          "Agrupación de variables",
+          "Simplificación"
+        ],
+        "common_misconceptions": [
+          "Olvidar multiplicar el segundo término dentro de un paréntesis por el factor externo (ej. escribir 2(x + 3) como 2x + 3 en lugar de 2x + 6)."
+        ],
+        "guided_activity": "El docente guía al grupo en la resolución de 3(x - 2) = x + 4 enfatizando la aplicación de la propiedad distributiva y la posterior transposición de términos con su debida operación inversa.",
+        "independent_activity": "Los alumnos completan un taller interactivo donde se les dan ecuaciones resueltas con errores comunes y deben actuar como 'detectives de matemáticas', identificando, corrigiendo y explicando los errores.",
+        "formative_assessment": "Evaluación rápida en parejas donde un alumno resuelve la ecuación en voz alta explicando los pasos y el otro verifica su validez matemática.",
+        "evidence_of_learning": [
+          "Portafolio de ejercicios resueltos con auto-corrección comentada de errores comunes encontrados."
+        ],
+        "evidence_chunk_ids": []
+      }
+    ],
+    "assumptions": [
+      "Se asume que la propuesta pedagógica es meramente teórica y didáctica ya que no se cuenta con fuentes externas obligatorias asignadas.",
+      "Se asume que los alumnos ya manejan las leyes de los signos para la suma, resta, multiplicación y división de números enteros.",
+      "Se distribuyen las 6 horas totales equitativamente en 2 semanas (3 horas por semana), dedicando la semana 1 a los conceptos de base y la semana 2 a la resolución y explicación de ecuaciones complejas."
+    ]
+  },
+  "latency_ms": 15646.97
+}

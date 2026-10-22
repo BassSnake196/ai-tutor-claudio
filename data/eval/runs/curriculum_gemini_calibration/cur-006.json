@@ -1,0 +1,287 @@
+{
+  "task_id": "cur-006",
+  "split": "calibration",
+  "mode": "full",
+  "status": "completed",
+  "prompt_hashes": {
+    "curriculum_architect": "ae0a89e6c3fccb5f",
+    "teaching": "e69cf06b9818c81b"
+  },
+  "attempts": 1,
+  "fallbacks": 0,
+  "repairs": 0,
+  "errors": [],
+  "architecture_reused": true,
+  "operations": {
+    "teaching": {
+      "events": [
+        {
+          "model": "gemini-3.5-flash",
+          "kind": "structured",
+          "status": "success",
+          "latency_ms": 11357.02529991977,
+          "fallback": false,
+          "repair": false,
+          "prompt_tokens": 2241,
+          "output_tokens": 3075,
+          "total_tokens": 5316
+        }
+      ],
+      "summary": {
+        "calls": 1,
+        "fallbacks": 0,
+        "repairs": 0,
+        "prompt_tokens": 2241,
+        "output_tokens": 3075,
+        "total_tokens": 5316,
+        "latency_p50_ms": 11357.02529991977,
+        "latency_p95_ms": 11357.02529991977,
+        "statuses": {
+          "success": 1
+        },
+        "errors": []
+      }
+    }
+  },
+  "teaching_model": "gemini-3.5-flash",
+  "teaching_usage": {
+    "prompt_tokens": 2241,
+    "output_tokens": 3075,
+    "other_tokens": 0,
+    "total_tokens": 5316
+  },
+  "curriculum": {
+    "schema_version": "1.0.0",
+    "topic_title": "Curso de Probabilidad para Preparatoria",
+    "target_level": "Preparatoria",
+    "pedagogical_approach": "Constructivismo y Aprendizaje Activo con Enfoque en la Resolución de Problemas",
+    "learning_objectives": [
+      "Identificar y definir espacios muestrales para diversos experimentos aleatorios sencillos.",
+      "Calcular probabilidades de eventos simples utilizando la regla de Laplace.",
+      "Resolver problemas que involucren la probabilidad de eventos mutuamente excluyentes e independientes.",
+      "Aplicar la probabilidad condicional para interpretar situaciones reales empleando tablas de contingencia y diagramas de árbol."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Conceptos Básicos y Probabilidad Clásica",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Experimentos aleatorios y espacio muestral",
+          "Regla de Laplace (probabilidad clásica)",
+          "Eventos mutuamente excluyentes y regla de la adición"
+        ],
+        "didactic_explanation": "EXPLICACIÓN DIDÁCTICA:\n1. INTUICIÓN Y CONOCIMIENTOS PREVIOS: Antes de usar fórmulas, partimos de la noción intuitiva de azar e incertidumbre: al lanzar una moneda equilibrada, no sabemos con certeza si caerá cara o cruz, pero sabemos que ambas opciones tienen la misma oportunidad. ¿Qué pasaría si la moneda estuviera trucada? ¿O si lanzamos un dado? Identificar las posibilidades lógicas de un suceso es el primer paso.\n2. FORMALIZACIÓN: Definimos formalmente el Espacio Muestral (S) como el conjunto de todos los resultados posibles de un experimento aleatorio. Un evento (A) es cualquier subconjunto de S. La Regla de Laplace establece que si todos los resultados en S son igualmente probables (equiprobables), la probabilidad del evento A se calcula como: P(A) = (Número de casos favorables a A) / (Número de casos posibles en S).\n3. EJEMPLO PASO A PASO: Supongamos que se lanza un dado regular de 6 caras. Queremos calcular la probabilidad de obtener un número par (A = {2, 4, 6}).\n- Paso A: Determinar el espacio muestral: S = {1, 2, 3, 4, 5, 6}. Total de casos posibles = 6.\n- Paso B: Identificar los casos favorables al evento 'número par': A = {2, 4, 6}. Total de casos favorables = 3.\n- Paso C: Aplicar la Regla de Laplace: P(A) = 3 / 6 = 0.5 o 50%.\n4. CONTRAEJEMPLO / ERROR TÍPICO: Un error común es afirmar que si se lanzan dos monedas, el espacio muestral de caras obtenidas es {0 caras, 1 cara, 2 caras} y que cada uno tiene una probabilidad de 1/3. Esto es falso porque obtener 1 cara puede ocurrir de dos maneras distintas (Cara-Cruz o Cruz-Cara), por lo que los resultados no son equiprobables sin desglosar el espacio muestral real: S = {CC, CX, XC, XX}. En este S real, la probabilidad de obtener 1 cara es 2/4 = 50%, no 1/3.\n\nINSTRUCCIONES PARA EL DOCENTE:\n- Proporcione monedas o dados reales para la primera actividad y promueva el conteo empírico inicial.\n- Asegure que los estudiantes distingan entre eventos individuales y la combinación de eventos utilizando diagramas de Venn en el pizarrón.\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\n- Registra cada resultado de tus lanzamientos de forma sistemática utilizando llaves { } para denotar conjuntos.\n- Asegúrate de comprobar que todos los eventos elementales de tu espacio muestral tengan la misma probabilidad antes de usar la Regla de Laplace.\n\nCRITERIO DE ÉXITO:\n- El estudiante representa correctamente el espacio muestral de un experimento usando notación matemática y calcula fracciones exactas simplificadas para la probabilidad de eventos simples y excluyentes.",
+        "practical_activities": [
+          "Lanzar dos dados y registrar la suma de los puntos para comparar frecuencias empíricas con el espacio muestral teórico.",
+          "Resolver ejercicios de cálculo de probabilidad clásica utilizando barajas de cartas y urnas con canicas coloridas."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si se lanza un dado regular de 6 caras, ¿cuál es la probabilidad de obtener un número primo?",
+            "expected_answer": "Los números primos en un dado de 6 caras son 2, 3 y 5 (3 casos favorables). El espacio muestral tiene 6 casos posibles. P(primo) = 3/6 = 1/2 o 0.5 (50%)."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones básicas con fracciones, decimales y porcentajes",
+          "Nociones básicas de la teoría de conjuntos"
+        ],
+        "learning_outcomes": [
+          "Determinar y listar el espacio muestral de un experimento aleatorio simple.",
+          "Calcular con precisión la probabilidad de un evento simple aplicando la regla de Laplace.",
+          "Aplicar la regla de adición para eventos mutuamente excluyentes."
+        ],
+        "essential_concepts": [
+          "Experimento aleatorio",
+          "Espacio muestral",
+          "Evento",
+          "Regla de Laplace",
+          "Eventos excluyentes"
+        ],
+        "common_misconceptions": [
+          "Creer que todos los espacios muestrales son equiprobables por defecto sin analizar la naturaleza del experimento.",
+          "Confundir la probabilidad de un evento con la frecuencia de ocurrencia en muestras de tamaño reducido."
+        ],
+        "guided_activity": "Resolución guiada de un problema que involucra calcular la probabilidad de extraer una carta roja o un as de una baraja estándar, discutiendo en el pizarrón la importancia de no duplicar los casos compartidos.",
+        "independent_activity": "Resolución individual de una guía de 10 ejercicios prácticos que varían en dificultad, enfocados en el cálculo de probabilidad clásica y adición de eventos excluyentes.",
+        "formative_assessment": "Un boleto de salida donde el estudiante debe escribir el espacio muestral de lanzar tres monedas al aire y calcular la probabilidad de obtener exactamente dos caras.",
+        "evidence_of_learning": [
+          "Portafolio de ejercicios prácticos individuales resueltos.",
+          "Registro de participación y desempeño en el boleto de salida."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Probabilidad Condicional e Independencia",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Eventos independientes y regla de multiplicación",
+          "Probabilidad condicional",
+          "Análisis con tablas de contingencia y diagramas de árbol"
+        ],
+        "didactic_explanation": "EXPLICACIÓN DIDÁCTICA:\n1. INTUICIÓN Y CONOCIMIENTOS PREVIOS: Imagine que saca una carta de una baraja. La probabilidad de que sea un as cambia drásticamente si alguien le susurra al oído que la carta que tiene en la mano es de color rojo. Al darnos información extra, se reduce nuestro 'universo de posibilidades' o espacio muestral. Esta es la base de la probabilidad condicional.\n2. FORMALIZACIÓN: Definimos la Probabilidad Condicional del evento A dado que ya ocurrió el evento B, denotada como P(A|B), mediante la fórmula: P(A|B) = P(A e B) / P(B), siempre que P(B) sea mayor a cero. Decimos que dos eventos son independientes si la ocurrencia de uno no altera la probabilidad de ocurrencia del otro, es decir: P(A|B) = P(A), lo que equivale a la regla de multiplicación: P(A e B) = P(A) * P(B).\n3. EJEMPLO PASO A PASO: Supongamos que en un salón de clases hay 20 alumnos: 12 mujeres y 8 hombres. De las mujeres, 4 usan lentes. De los hombres, 2 usan lentes. Si se selecciona un estudiante al azar y resulta ser mujer, ¿cuál es la probabilidad de que use lentes?\n- Paso A: El evento condicionante B es 'es mujer'. Hay un total de 12 mujeres. Este es nuestro nuevo espacio muestral reducido.\n- Paso B: Identificamos cuántas del grupo de mujeres cumplen el evento A ('usa lentes'). Hay 4 mujeres que usan lentes (casos de intersección A e B).\n- Paso C: Aplicamos el cálculo condicional intuitivo: P(Lentes | Mujer) = 4 / 12 = 1/3 o 33.3%.\n4. CONTRAEJEMPLO / ERROR TÍPICO: Pensar que la probabilidad de que ocurran dos eventos consecutivos sin reemplazo es igual que con reemplazo. Por ejemplo, extraer dos canicas rojas consecutivamente de una urna con 3 rojas y 2 azules. Si no hay reemplazo, la probabilidad del segundo evento cambia de 3/5 a 2/4. Tratar estos eventos como independientes multiplicando simplemente (3/5) * (3/5) es un error crítico.\n\nINSTRUCCIONES PARA EL DOCENTE:\n- Modele en el pizarrón el diagrama de árbol colocando las probabilidades en las ramas y explicando que multiplicar a lo largo de una rama corresponde a la intersección de eventos.\n- Use tablas de contingencia de 2x2 para simplificar la transición hacia fórmulas algebraicas complejas.\n\nINSTRUCCIONES PARA EL ESTUDIANTE:\n- Cuando resuelvas problemas de extracciones, lee con atención si el experimento se realiza 'con reemplazo' (eventos independientes) o 'sin reemplazo' (eventos dependientes).\n- Utiliza tablas de doble entrada para organizar los datos numéricos antes de aplicar cualquier cociente.\n\nCRITERIO DE ÉXITO:\n- El estudiante interpreta y calcula correctamente probabilidades condicionales usando una tabla de doble entrada o un diagrama de árbol, diferenciando de manera explícita escenarios independientes de los dependientes.",
+        "practical_activities": [
+          "Análisis de un caso de diagnóstico médico en una población escolar a través de una tabla de contingencia de 2x2.",
+          "Construcción grupal de diagramas de árbol para representar experimentos con extracciones sucesivas sin reemplazo."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "En una urna hay 3 bolas rojas y 2 azules. Si se extraen dos bolas consecutivamente y sin reemplazo, ¿cuál es la probabilidad de que ambas sean rojas?",
+            "expected_answer": "La probabilidad de la primera roja es 3/5. Dado que no hay reemplazo, quedan 2 rojas y 4 bolas en total. La probabilidad de la segunda roja es 2/4. Aplicando la regla de multiplicación: P(R1 y R2) = (3/5) * (2/4) = 6/20 = 3/10 o 0.3 (30%)."
+          }
+        ],
+        "prerequisites": [
+          "Cálculo de probabilidad clásica",
+          "Multiplicación de fracciones y decimales"
+        ],
+        "learning_outcomes": [
+          "Diferenciar de manera justificada entre eventos dependientes e independientes.",
+          "Calcular la probabilidad conjunta empleando de forma adecuada la regla de la multiplicación.",
+          "Resolver problemas prácticos de probabilidad condicional mediante tablas de contingencia."
+        ],
+        "essential_concepts": [
+          "Independencia de eventos",
+          "Probabilidad condicional",
+          "Regla de multiplicación",
+          "Diagramas de árbol",
+          "Tablas de contingencia"
+        ],
+        "common_misconceptions": [
+          "Asumir erróneamente independencia en eventos consecutivos sin reemplazo.",
+          "Confundir la probabilidad condicional P(A|B) con P(B|A)."
+        ],
+        "guided_activity": "Construcción colectiva en el pizarrón de un diagrama de árbol para simular la selección secuencial de frutas en una canasta, calculando las probabilidades condicionales de cada rama.",
+        "independent_activity": "Análisis y resolución autónoma de un caso práctico donde se deben calcular probabilidades condicionales a partir de una tabla de doble entrada sobre hábitos de estudio y rendimiento académico.",
+        "formative_assessment": "Un cuestionario digital interactivo de 4 preguntas rápidas enfocado en discernir si dos eventos dados son independientes o dependientes.",
+        "evidence_of_learning": [
+          "Hoja de trabajo de análisis de la tabla de doble entrada.",
+          "Reporte de respuestas del cuestionario digital interactivo."
+        ],
+        "evidence_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "grounding_status": "UNSUPPORTED"
+  },
+  "warnings": [],
+  "architecture": {
+    "schema_version": "1.0.0",
+    "topic_title": "Curso de Probabilidad para Preparatoria",
+    "target_level": "Preparatoria",
+    "pedagogical_approach": "Constructivismo y Aprendizaje Activo con Enfoque en la Resolución de Problemas",
+    "learning_objectives": [
+      "Identificar y definir espacios muestrales para diversos experimentos aleatorios sencillos.",
+      "Calcular probabilidades de eventos simples utilizando la regla de Laplace.",
+      "Resolver problemas que involucren la probabilidad de eventos mutuamente excluyentes e independientes.",
+      "Aplicar la probabilidad condicional para interpretar situaciones reales empleando tablas de contingencia y diagramas de árbol."
+    ],
+    "syllabus_units": [
+      {
+        "unit_number": 1,
+        "unit_name": "Conceptos Básicos y Probabilidad Clásica",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Experimentos aleatorios y espacio muestral",
+          "Regla de Laplace (probabilidad clásica)",
+          "Eventos mutuamente excluyentes y regla de la adición"
+        ],
+        "didactic_explanation": "La unidad introduce la probabilidad de forma intuitiva, partiendo de experimentos comunes como el lanzamiento de monedas y dados. Se guía al estudiante para construir el concepto de espacio muestral y transicionar hacia la matematización con la regla de Laplace. Finalmente, se abordan los eventos que no pueden ocurrir simultáneamente para consolidar la estructura aditiva básica.",
+        "practical_activities": [
+          "Lanzar dos dados y registrar la suma de los puntos para comparar frecuencias empíricas con el espacio muestral teórico.",
+          "Resolver ejercicios de cálculo de probabilidad clásica utilizando barajas de cartas y urnas con canicas coloridas."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "Si se lanza un dado regular de 6 caras, ¿cuál es la probabilidad de obtener un número primo?",
+            "expected_answer": "Los números primos en un dado de 6 caras son 2, 3 y 5 (3 casos favorables). El espacio muestral tiene 6 casos posibles. P(primo) = 3/6 = 1/2 o 0.5 (50%)."
+          }
+        ],
+        "prerequisites": [
+          "Operaciones básicas con fracciones, decimales y porcentajes",
+          "Nociones básicas de la teoría de conjuntos"
+        ],
+        "learning_outcomes": [
+          "Determinar y listar el espacio muestral de un experimento aleatorio simple.",
+          "Calcular con precisión la probabilidad de un evento simple aplicando la regla de Laplace.",
+          "Aplicar la regla de adición para eventos mutuamente excluyentes."
+        ],
+        "essential_concepts": [
+          "Experimento aleatorio",
+          "Espacio muestral",
+          "Evento",
+          "Regla de Laplace",
+          "Eventos excluyentes"
+        ],
+        "common_misconceptions": [
+          "Creer que todos los espacios muestrales son equiprobables por defecto sin analizar la naturaleza del experimento.",
+          "Confundir la probabilidad de un evento con la frecuencia de ocurrencia en muestras de tamaño reducido."
+        ],
+        "guided_activity": "Resolución guiada de un problema que involucra calcular la probabilidad de extraer una carta roja o un as de una baraja estándar, discutiendo en el pizarrón la importancia de no duplicar los casos compartidos.",
+        "independent_activity": "Resolución individual de una guía de 10 ejercicios prácticos que varían en dificultad, enfocados en el cálculo de probabilidad clásica y adición de eventos excluyentes.",
+        "formative_assessment": "Un boleto de salida donde el estudiante debe escribir el espacio muestral de lanzar tres monedas al aire y calcular la probabilidad de obtener exactamente dos caras.",
+        "evidence_of_learning": [
+          "Portafolio de ejercicios prácticos individuales resueltos.",
+          "Registro de participación y desempeño en el boleto de salida."
+        ],
+        "evidence_chunk_ids": []
+      },
+      {
+        "unit_number": 2,
+        "unit_name": "Probabilidad Condicional e Independencia",
+        "estimated_hours": 3.0,
+        "subtopics": [
+          "Eventos independientes y regla de multiplicación",
+          "Probabilidad condicional",
+          "Análisis con tablas de contingencia y diagramas de árbol"
+        ],
+        "didactic_explanation": "Esta unidad expande los conceptos hacia la relación entre múltiples eventos. Se expone cómo la ocurrencia de un evento afecta (o no) a otro, introduciendo la noción de dependencia. Se recurre al andamiaje visual de diagramas de árbol y tablas de contingencia para facilitar la resolución de problemas de probabilidad condicional antes de formalizar el álgebra.",
+        "practical_activities": [
+          "Análisis de un caso de diagnóstico médico en una población escolar a través de una tabla de contingencia de 2x2.",
+          "Construcción grupal de diagramas de árbol para representar experimentos con extracciones sucesivas sin reemplazo."
+        ],
+        "evaluation_questions": [
+          {
+            "question": "En una urna hay 3 bolas rojas y 2 azules. Si se extraen dos bolas consecutivamente y sin reemplazo, ¿cuál es la probabilidad de que ambas sean rojas?",
+            "expected_answer": "La probabilidad de la primera roja es 3/5. Dado que no hay reemplazo, quedan 2 rojas y 4 bolas en total. La probabilidad de la segunda roja es 2/4. Aplicando la regla de multiplicación: P(R1 y R2) = (3/5) * (2/4) = 6/20 = 3/10 o 0.3 (30%)."
+          }
+        ],
+        "prerequisites": [
+          "Cálculo de probabilidad clásica",
+          "Multiplicación de fracciones y decimales"
+        ],
+        "learning_outcomes": [
+          "Diferenciar de manera justificada entre eventos dependientes e independientes.",
+          "Calcular la probabilidad conjunta empleando de forma adecuada la regla de la multiplicación.",
+          "Resolver problemas prácticos de probabilidad condicional mediante tablas de contingencia."
+        ],
+        "essential_concepts": [
+          "Independencia de eventos",
+          "Probabilidad condicional",
+          "Regla de multiplicación",
+          "Diagramas de árbol",
+          "Tablas de contingencia"
+        ],
+        "common_misconceptions": [
+          "Asumir erróneamente independencia en eventos consecutivos sin reemplazo.",
+          "Confundir la probabilidad condicional P(A|B) con P(B|A)."
+        ],
+        "guided_activity": "Construcción colectiva en el pizarrón de un diagrama de árbol para simular la selección secuencial de frutas en una canasta, calculando las probabilidades condicionales de cada rama.",
+        "independent_activity": "Análisis y resolución autónoma de un caso práctico donde se deben calcular probabilidades condicionales a partir de una tabla de doble entrada sobre hábitos de estudio y rendimiento académico.",
+        "formative_assessment": "Un cuestionario digital interactivo de 4 preguntas rápidas enfocado en discernir si dos eventos dados son independientes o dependientes.",
+        "evidence_of_learning": [
+          "Hoja de trabajo de análisis de la tabla de doble entrada.",
+          "Reporte de respuestas del cuestionario digital interactivo."
+        ],
+        "evidence_chunk_ids": []
+      }
+    ],
+    "assumptions": [
+      "El presente diseño curricular es una propuesta pedagógica y no se basa en fuentes específicas provistas por el usuario.",
+      "Se asume que los estudiantes disponen de calculadoras científicas estándar para realizar operaciones aritméticas con decimales.",
+      "El curso se distribuye equitativamente en 2 sesiones semanales de 1.5 horas cada una, sumando un total de 6 horas."
+    ]
+  },
+  "latency_ms": 12722.95
+}
